@@ -1,0 +1,45 @@
+.subHeader {
+  background-color: #fff;
+  line-height: 40px;
+  border-top: 1px solid #e8ebf1;
+  border-bottom: 1px solid #e8ebf1;
+}
+
+.nav {
+  text-align: center;
+  font-size: 0;
+}
+
+.link {
+  line-height: 50px;
+  margin-left: 60px;
+  position: relative;
+  @include inline-block;
+  @include ff-roboto-bold;
+  text-transform: uppercase;
+  text-decoration: none !important;
+  font-size: 18px;
+  color: #000 !important;
+
+  &:before {
+    content: '/';
+    display: block;
+    position: absolute;
+    left: -35px;
+    top: 0;
+    color: #e8ebf1 !important;
+  }
+
+  &:first-child {
+    margin-left: 0;
+
+    &:before {
+      display: none;
+    }
+  }
+
+  &:hover,
+  &.active {
+    color: $color-brand !important;
+  }
+}

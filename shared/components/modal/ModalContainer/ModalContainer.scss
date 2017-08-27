@@ -1,0 +1,31 @@
+.modalContainer {
+  background-color: #fff;
+}
+
+
+@include media-except-mobile {
+
+  .modalContainer {
+    min-width: 260px;
+    min-height: 160px;
+    position: relative;
+    border-radius: 2px;
+    transform: translateY(-100px);
+    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+    &.mounted {
+      transform: translateY(0px);
+    }
+  }
+}
+
+@include media-mobile {
+
+  .modalContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+}

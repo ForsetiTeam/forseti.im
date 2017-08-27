@@ -1,0 +1,35 @@
+.widthContainerIn {
+
+  &.relative {
+    position: relative;
+  }
+}
+
+.fullHeight {
+  height: 100%;
+}
+
+
+@include media-except-mobile {
+
+  .widthContainer {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0 20px;
+
+    &.main {
+      padding: 20px 20px 70px;
+    }
+  }
+}
+
+@include media-mobile {
+
+  .widthContainer {
+    padding: 0 10px;
+
+    &.main {
+      padding: 20px 20px 30px;
+    }
+  }
+}

@@ -1,0 +1,54 @@
+.footer {
+  padding: 30px 0;
+  background-color: #000;
+  color: #fff;
+}
+
+.logo {
+  position: relative;
+  z-index: 20;
+  font-size: 22px;
+}
+
+.nav {
+  position: relative;
+  z-index: 20;
+  font-size: 0;
+}
+
+.navItem {
+  margin-left: 20px;
+  font-size: 16px;
+  color: #fff;
+
+  &:first-child {
+    margin-left: 0;
+  }
+}
+
+.socialsContainer {
+  height: 40px;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  text-align: center;
+}
+
+
+@include media-except-mobile {
+
+  .footer {
+    height: $height-footer;
+  }
+}
+
+@include media-mobile {
+
+  .footer {
+    height: $height-footer-mobile;
+  }
+}

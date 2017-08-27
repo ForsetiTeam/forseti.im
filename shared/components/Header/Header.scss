@@ -1,0 +1,11 @@
+.header {
+
+}
+
+
+@include media-except-mobile {
+
+  .header {
+    height: $height-header;
+  }
+}

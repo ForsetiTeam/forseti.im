@@ -1,0 +1,34 @@
+.wrapper {
+  height: 100%;
+  z-index: 0;
+}
+
+.headerContainer {
+  z-index: 200;
+}
+
+
+@include media-except-mobile {
+
+  .footerContainer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  .contentContainer {
+    padding-bottom: $height-footer;
+  }
+}
+
+@include media-mobile {
+
+  .contentContainer {
+    padding-bottom: 0;
+  }
+
+  .footerContainer {
+    position: relative;
+  }
+}

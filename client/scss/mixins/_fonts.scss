@@ -1,0 +1,28 @@
+@mixin ff-roboto-thin {
+  font-family: 'Roboto';
+  font-weight: 300;
+}
+
+@mixin ff-roboto {
+  font-family: 'Roboto';
+}
+
+@mixin ff-roboto-bold {
+  font-family: 'Roboto';
+  font-weight: 600;
+}
+
+
+@mixin ff-opensans-thin {
+  font-family: 'Open Sans';
+  font-weight: 300;
+}
+
+@mixin ff-opensans {
+  font-family: 'Open Sans';
+}
+
+@mixin ff-opensans-bold {
+  font-family: 'Open Sans';
+  font-weight: 600;
+}

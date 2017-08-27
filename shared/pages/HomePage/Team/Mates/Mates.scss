@@ -1,0 +1,45 @@
+.mates {
+  font-size: 0;
+}
+
+.mateContainer {
+  width: 25%;
+  padding: 20px;
+  @include inline-block;
+
+  .advisers & {
+    width: 100%;
+  }
+}
+
+.mate {
+  display: block;
+}
+
+.avatar {
+  width: 100%;
+  @include square-block;
+
+  img {
+    width: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+.name {
+  margin-top: 15px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 18px;
+}
+
+.role {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 16px;
+  color: #3228ff;
+}

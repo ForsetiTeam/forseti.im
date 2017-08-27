@@ -1,0 +1,50 @@
+.logo {
+  display: block;
+  position: relative;
+  font-size: 0;
+
+  &:after {
+    content: '';
+    display: none;
+    width: 50px;
+    height: 4px;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+  }
+
+  &.light {
+    color: #fff !important;
+
+    &:after {
+      background-color: #fff;
+    }
+  }
+
+  &.dark {
+    color: #000 !important;
+
+    &:after {
+      background-color: #000;
+    }
+  }
+}
+
+.image {
+  height: 100%;
+  margin-right: 10px;
+  @include inline-block;
+}
+
+.title {
+  @include inline-block;
+  text-decoration: none;
+  line-height: 30px;
+  text-transform: uppercase;
+  @include ff-roboto-bold;
+  font-size: 28px;
+
+  span {
+    color: #e0b509;
+  }
+}
