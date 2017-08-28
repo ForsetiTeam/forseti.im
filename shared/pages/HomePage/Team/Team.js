@@ -29,7 +29,7 @@ const team = [
   {
     avatar: denisKaiserAvatar,
     name: 'Denis Kaiser',
-    role: 'CSA',
+    role: 'Blockchain developer',
   },
   {
     avatar: vladinirManzukAvatar,

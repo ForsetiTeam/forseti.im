@@ -1,10 +1,10 @@
 import baseConfig from './default'
 
 export default {
-  publicPath: `http://forseti.surge.sh${baseConfig.publicPath}`,
+  publicPath: `https://forseti.im${baseConfig.publicPath}`,
 
   services: {
-    base: 'http://forseti.surge.sh/',
-    api: 'http://forseti.surge.sh/',
+    base: 'https://forseti.im/',
+    api: 'https://forseti.im/',
   },
 }

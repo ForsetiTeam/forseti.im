@@ -5,6 +5,7 @@
 .social {
   margin-left: 20px;
   cursor: pointer;
+  @include square-block;
   @include inline-block();
   position: relative;
   border-radius: 50%;
@@ -41,7 +42,18 @@
   }
 
   &.github {
-    background-color: #000;
+
+    svg {
+      height: 96%;
+      transform: translate3d(12%, 11%, 0);
+    }
+  }
+
+  &.mail {
+
+    svg {
+      height: 70%;
+    }
   }
 
   &.colored {

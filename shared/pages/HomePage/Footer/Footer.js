@@ -17,13 +17,13 @@ const Footer = () => (
         </Box>
         <Box>
           <Socials
-            size={40}
             whiteEmpty
             links={{
-              facebook: '',
-              twitter: '',
-              telegram: '',
-              mail: '',
+              facebook: 'https://www.facebook.com/forseti.im',
+              twitter: 'https://twitter.com/forseti_im',
+              telegram: 'https://t.me/forseti_channel',
+              github: 'https://github.com/ForsetiTeam',
+              mail: 'mailto:welcome@forseti.im',
             }}
           />
         </Box>

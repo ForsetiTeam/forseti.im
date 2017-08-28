@@ -60,7 +60,7 @@ const socialImages = {
   ),
 }
 
-const Socials = ({ size = 20, colored, emptyWhite, emptyBlack, links }) => (
+const Socials = ({ colored, emptyWhite, emptyBlack, links }) => (
   <div styleName="socials">
     {
       Object.keys(links).map((socialName) => {
@@ -70,10 +70,8 @@ const Socials = ({ size = 20, colored, emptyWhite, emptyBlack, links }) => (
           'emptyBlack': emptyBlack,
         })
 
-        const style = { width: `${size}px`, height: `${size}px` }
-
         return (
-          <Href key={socialName} styleName={styleName} style={style} redirect={links[socialName]} role="social">
+          <Href key={socialName} styleName={styleName} redirect={links[socialName]} role="social">
             {socialImages[socialName]}
           </Href>
         )
