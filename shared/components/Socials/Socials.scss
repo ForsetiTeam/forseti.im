@@ -75,11 +75,7 @@
     }
   }
 
-  &.white {
-    background-color: #fff;
-  }
-
-  &.whiteEmpty {
+  &.emptyWhite {
     border: 1px solid #fff;
 
     svg {
@@ -88,6 +84,18 @@
     
     &:hover {
       box-shadow: #fff 0 0 0 1px;
+    }
+  }
+
+  &.emptyBlack {
+    border: 1px solid #000;
+
+    svg {
+      fill: #000;
+    }
+
+    &:hover {
+      box-shadow: #000 0 0 0 1px;
     }
   }
 
@@ -122,9 +130,13 @@
       &.github {
         box-shadow: darken(#000, 15%) 0 0 0 2px;
       }
+
+      &.mail {
+        box-shadow: darken(#000, 15%) 0 0 0 2px;
+      }
     }
 
-    &.whiteEmpty {
+    &.emptyWhite {
 
     }
   }

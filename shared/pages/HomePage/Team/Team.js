@@ -8,11 +8,11 @@ import Section from '../Section/Section'
 import Title from '../Title/Title'
 import Mates from './Mates/Mates'
 
-import alexNikolaevAvatar from './images/alexnikolaev.jpg'
-import pavelIvanovAvatar from './images/pavelivanov.jpg'
-import denisKaiserAvatar from './images/deniskaiser.jpg'
-import vladinirManzukAvatar from './images/vladimirmanzuk.jpg'
-import noxonAvatar from './images/noxon.jpg'
+import alexNikolaevAvatar from './images/alexnikolaev2.jpg'
+import pavelIvanovAvatar from './images/pavelivanov2.jpg'
+import denisKaiserAvatar from './images/deniskaiser2.jpg'
+import vladinirManzukAvatar from './images/vladimirmanzuk2.jpg'
+import noxonAvatar from './images/noxon2.jpg'
 
 
 const team = [
@@ -36,29 +36,17 @@ const team = [
     name: 'Vladimir Manzuk',
     role: 'Analyst',
   },
-]
-
-const advisers = [
   {
     avatar: noxonAvatar,
     name: 'Alex Noxon',
-    role: '',
+    role: 'Adviser',
   },
 ]
 
 const Team = () => (
   <Section>
-    <Flex>
-      <Box styleName="team">
-        <Title>Meet Forseti <b>Team</b></Title>
-        <Mates mates={team} />
-      </Box>
-      <Box styleName="vr" />
-      <Box styleName="advisers">
-        <Title><b>Advisers</b></Title>
-        <Mates advisers mates={advisers} />
-      </Box>
-    </Flex>
+    <Title>Meet Forseti <b>Team</b></Title>
+    <Mates mates={team} />
   </Section>
 )
 

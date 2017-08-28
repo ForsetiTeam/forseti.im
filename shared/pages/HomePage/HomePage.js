@@ -8,6 +8,7 @@ import WidthContainer from 'components/WidthContainer/WidthContainer'
 import HomeHero from './HomeHero/HomeHero'
 import Services from './Services/Services'
 import Team from './Team/Team'
+import Footer from './Footer/Footer'
 
 
 const HomePage = () => (
@@ -17,6 +18,7 @@ const HomePage = () => (
       <Services />
       <Team />
     </WidthContainer>
+    <Footer />
   </div>
 )
 

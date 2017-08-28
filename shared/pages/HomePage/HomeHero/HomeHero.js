@@ -30,6 +30,10 @@ export default class HomeHero extends React.Component {
             <div styleName="box box5" />
             <div styleName="box box6" />
           </div>
+          <div styleName="box box7" />
+          <div styleName="box box8" />
+          <div styleName="box box9" />
+          <div styleName="box box10" />
         </div>
         <WidthContainer>
           <Flex styleName="header" justify="space-between" align="center">

@@ -1,7 +1,7 @@
 .hero {
   height: 100vh;
   background-color: #201e46;
-  background-image: url(./images/bg.png);
+  background-image: url(./images/bg.png), url(./images/bg.png);
   background-size: 200px auto;
   background-repeat: repeat;
   position: relative;
@@ -26,6 +26,7 @@
 }
 
 .nav {
+  display: none;
   font-size: 0;
 }
 
@@ -127,9 +128,11 @@
 
 .boxGroup {
   position: absolute;
+  z-index: 20;
 }
 
 .box {
+  @include square-block;
   position: absolute;
 
   &:after {
@@ -156,7 +159,6 @@
 
 .box1 {
   width: 200px;
-  height: 200px;
   bottom: -70px;
   left: 100px;
   animation: levitation1 4s alternate ease-in-out infinite;
@@ -174,7 +176,6 @@
 
 .box2 {
   width: 80px;
-  height: 80px;
   bottom: 80px;
   left: 20px;
   animation: levitation2 4s alternate ease-in-out infinite;
@@ -187,14 +188,13 @@
 
 @keyframes levitation3 {
   0% { transform: translate3d(0, 0, 0); }
-  100% { transform: translate3d(60px, 60px, 0); }
+  100% { transform: translate3d(0, 60px, 0); }
 }
 
 .box3 {
   width: 40px;
-  height: 40px;
   bottom: 150px;
-  left: 70px;
+  left: 135px;
   animation: levitation3 3s alternate ease-in-out infinite;
 
   &:after {
@@ -210,7 +210,6 @@
 
 .box4 {
   width: 24px;
-  height: 24px;
   bottom: 220px;
   left: 90px;
   animation: levitation4 2.2s alternate ease-in-out infinite;
@@ -234,7 +233,6 @@
 
 .box5 {
   width: 300px;
-  height: 300px;
   right: -140px;
   bottom: 30px;
   animation: levitation6 5s alternate ease-in-out infinite;
@@ -252,7 +250,6 @@
 
 .box6 {
   width: 120px;
-  height: 120px;
   right: 50px;
   bottom: 20px;
   animation: levitation6 3s alternate ease-in-out infinite;
@@ -260,5 +257,56 @@
   &:after {
     background-color: #00b6ff;
     opacity: 0.7;
+  }
+}
+
+
+.box7 {
+  width: 900px;
+  top: -340px;
+  left: 100px;
+
+  &:after {
+    background-color: #00b6ff;
+    opacity: 0.07;
+  }
+}
+
+.box8 {
+  width: 34%;
+  right: -5%;
+  bottom: -5%;
+
+  &:after {
+    background-color: #00ffea;
+    opacity: 0.03;
+  }
+}
+
+@keyframes levitation9 {
+  0% { transform: translate3d(0, 0, 0); }
+  100% { transform: translate3d(0, 20px, 0); }
+}
+
+.box9 {
+  width: 300px;
+  left: -50px;
+  top: 90px;
+  animation: levitation9 6s alternate ease-in-out infinite;
+
+  &:after {
+    background-color: #2646c1;
+    opacity: 0.17;
+  }
+}
+
+.box10 {
+  width: 100px;
+  top: -10px;
+  left: 700px;
+
+  &:after {
+    background-color: #00b6ff;
+    opacity: 0.08;
   }
 }

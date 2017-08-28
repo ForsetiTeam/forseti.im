@@ -1,12 +1,11 @@
 import React from 'react'
-import cx from 'classnames'
 
 import cssModules from 'react-css-modules'
 import styles from './Mates.scss'
 
 
 const Mates = ({ mates, advisers }) => (
-  <div styleName={cx('mates', { advisers })}>
+  <div styleName="mates">
     {
       mates.map(({ avatar, name, role }, index) => (
         <div key={index} styleName="mateContainer">
@@ -27,4 +26,4 @@ const Mates = ({ mates, advisers }) => (
   </div>
 )
 
-export default cssModules(Mates, styles, { allowMultiple: true })
+export default cssModules(Mates, styles)
