@@ -5,7 +5,6 @@ import cssModules from 'react-css-modules'
 import styles from './HomeHero.scss'
 
 import WidthContainer from 'components/WidthContainer/WidthContainer'
-import Center from 'components/Center/Center'
 
 
 @cssModules(styles, { allowMultiple: true })

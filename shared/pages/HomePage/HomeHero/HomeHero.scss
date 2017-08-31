@@ -52,6 +52,11 @@
   z-index: 20;
 }
 
+.logoIcon {
+  width: 100px;
+  height: 100px;
+}
+
 .title {
   margin-top: -20px;
   @include ff-opensans-bold;
@@ -376,5 +381,9 @@
 
   .boxes {
     opacity: 0.3;
+  }
+
+  .box {
+    animation: none !important;
   }
 }

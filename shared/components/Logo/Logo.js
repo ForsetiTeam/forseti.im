@@ -7,7 +7,8 @@ import styles from './Logo.scss'
 
 import Href from 'components/Href/Href'
 
-// import logo from './images/logo.png'
+import logoWhite from './images/white.svg'
+import logoBlack from './images/black.svg'
 
 
 const Logo = ({ titleExist, light, dark, ...rest }) => {
@@ -18,7 +19,7 @@ const Logo = ({ titleExist, light, dark, ...rest }) => {
 
   return (
     <Href styleName={styleName} to={links.abs.home} {...rest}>
-      {/*<img styleName="image" src={logo} />*/}
+      <img styleName="image" src={logoBlack} />
       {
         titleExist && (
           <div styleName="title" role="title">Forseti</div>
@@ -29,7 +30,7 @@ const Logo = ({ titleExist, light, dark, ...rest }) => {
 }
 
 Logo.defaultProps = {
-  titleExist: true,
+  titleExist: false,
 }
 
 export default cssModules(Logo, styles, { allowMultiple: true })

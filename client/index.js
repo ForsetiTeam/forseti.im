@@ -17,9 +17,29 @@ const history = syncHistoryWithStore(browserHistory, store, {
   selectLocationState: (state) => state.get('routing').toJS(),
 })
 
-ReactDOM.render(
-  <Root store={store} history={history} translationMessages={translationMessages}>
-    {routes}
-  </Root>,
-  document.getElementById('root')
+const render = (translationMessages) => (
+  ReactDOM.render(
+    <Root store={store} history={history} translationMessages={translationMessages}>
+      {routes}
+    </Root>,
+    document.getElementById('root')
+  )
 )
+
+// TODO enable when Assets path will be resolved for Webpack building and [num].chunk.js will loads
+if (!window.Intl) {
+  require.ensure([
+    'intl',
+    'intl/locale-data/jsonp/en',
+    'intl/locale-data/jsonp/ru',
+  ], (require) => {
+    require('intl')
+    require('intl/locale-data/jsonp/en')
+    require('intl/locale-data/jsonp/ru')
+
+    render(translationMessages)
+  })
+}
+else {
+  render(translationMessages)
+}
