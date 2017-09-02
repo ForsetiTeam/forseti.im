@@ -15,6 +15,7 @@ import InsideLayout from 'layouts/InsideLayout/InsideLayout'
 // Pages ----------------------------------------------------------------------- /
 
 import HomePage from 'pages/HomePage/HomePage'
+import AboutTeamPage from 'pages/AboutTeamPage/AboutTeamPage'
 
 
 const routes = (
@@ -22,7 +23,7 @@ const routes = (
     <Route path="/" component={HomePage} />
 
     <Route component={InsideLayout}>
-
+      <Route {...links.routes.aboutTeam} component={AboutTeamPage} />
     </Route>
     <Route component={HasAuth}>
 

@@ -13,6 +13,7 @@ import pavelIvanovAvatar from './images/pavelivanov2.jpg'
 import denisKaiserAvatar from './images/deniskaiser2.jpg'
 import vladinirManzukAvatar from './images/vladimirmanzuk2.jpg'
 import noxonAvatar from './images/noxon2.jpg'
+import andreyRebrovAvatar from './images/andreyrebrov.jpg'
 
 
 const team = [
@@ -39,6 +40,11 @@ const team = [
   {
     avatar: noxonAvatar,
     name: 'Alex Noxon',
+    role: 'Adviser',
+  },
+  {
+    avatar: andreyRebrovAvatar,
+    name: 'Andrey Rebrov',
     role: 'Adviser',
   },
 ]
