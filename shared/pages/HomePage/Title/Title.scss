@@ -1,13 +1,29 @@
 .title {
-  margin-bottom: 50px;
-  line-height: 40px;
   @include ff-opensans-thin;
   text-align: center;
-  font-size: 40px;
 
   b {
     position: relative;
     @include ff-opensans-bold;
     color: #3228ff;
+  }
+}
+
+
+@include media-except-mobile {
+
+  .title {
+    margin-bottom: 50px;
+    line-height: 40px;
+    font-size: 40px;
+  }
+}
+
+@include media-mobile {
+
+  .title {
+    margin-bottom: 40px;
+    line-height: 40px;
+    font-size: 30px;
   }
 }

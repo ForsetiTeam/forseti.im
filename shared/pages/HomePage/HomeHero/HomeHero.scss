@@ -38,15 +38,12 @@
   @include ff-opensans-bold;
   text-transform: uppercase;
   text-align: center;
-  font-size: 36px;
   color: #fff;
 }
 
 .subTitle {
-  margin-top: 25px;
   @include ff-opensans-thin;
   text-align: center;
-  font-size: 26px;
   color: #00ff99;
 
   span {
@@ -318,6 +315,15 @@
     text-align: left;
   }
 
+  .title {
+    font-size: 36px;
+  }
+
+  .subTitle {
+    margin-top: 25px;
+    font-size: 26px;
+  }
+
   .buttons {
     margin-top: 90px;
     text-align: center;
@@ -339,6 +345,15 @@
   .content {
     padding: 30px 20px 40px;
     position: relative;
+  }
+
+  .title {
+    font-size: 20px;
+  }
+
+  .subTitle {
+    margin-top: 20px;
+    font-size: 18px;
   }
 
   .buttons {

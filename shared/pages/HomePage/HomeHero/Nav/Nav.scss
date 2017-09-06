@@ -20,3 +20,11 @@
     color: #fff;
   }
 }
+
+
+@include media-mobile {
+
+  .nav {
+    display: none;
+  }
+}

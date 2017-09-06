@@ -1,4 +1,19 @@
 .section {
-  padding: 40px 0;
   position: relative;
 }
+
+
+@include media-except-mobile {
+
+  .section {
+    padding: 40px 0;
+  }
+}
+
+@include media-mobile {
+
+  .section {
+    padding: 20px 0;
+  }
+}
+
