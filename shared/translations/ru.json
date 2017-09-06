@@ -1,1 +1,148 @@
-[]
+[
+  {
+    "id": "components.buttons.CommonButton.back",
+    "defaultMessage": "Back",
+    "message": ""
+  },
+  {
+    "id": "components.buttons.CommonButton.accept",
+    "defaultMessage": "Accept",
+    "message": ""
+  },
+  {
+    "id": "components.buttons.CommonButton.cancel",
+    "defaultMessage": "Cancel",
+    "message": ""
+  },
+  {
+    "id": "components.buttons.CommonButton.confirm",
+    "defaultMessage": "Confirm",
+    "message": ""
+  },
+  {
+    "id": "components.buttons.CommonButton.decline",
+    "defaultMessage": "Decline",
+    "message": ""
+  },
+  {
+    "id": "components.buttons.CommonButton.login",
+    "defaultMessage": "Login",
+    "message": ""
+  },
+  {
+    "id": "components.buttons.CommonButton.finish",
+    "defaultMessage": "Finish",
+    "message": ""
+  },
+  {
+    "id": "components.buttons.CommonButton.reject",
+    "defaultMessage": "Reject",
+    "message": ""
+  },
+  {
+    "id": "components.buttons.CommonButton.save",
+    "defaultMessage": "Save",
+    "message": ""
+  },
+  {
+    "id": "components.buttons.CommonButton.submit",
+    "defaultMessage": "Submit",
+    "message": ""
+  },
+  {
+    "id": "components.modals.AuthModal.loginTitle",
+    "defaultMessage": "Log in to your account",
+    "message": ""
+  },
+  {
+    "id": "components.modals.AuthModal.registerTitle",
+    "defaultMessage": "Create your account",
+    "message": ""
+  },
+  {
+    "id": "components.modals.AuthModal.email",
+    "defaultMessage": "Email",
+    "message": ""
+  },
+  {
+    "id": "components.modals.AuthModal.password",
+    "defaultMessage": "Password",
+    "message": ""
+  },
+  {
+    "id": "components.modals.AuthModal.forgotPassword",
+    "defaultMessage": "Forgot your password?",
+    "message": ""
+  },
+  {
+    "id": "components.modals.AuthModal.dontHaveAnAccount",
+    "defaultMessage": "Dont't have an account?",
+    "message": ""
+  },
+  {
+    "id": "components.modals.AuthModal.haveAnAccount",
+    "defaultMessage": "Have an account?",
+    "message": ""
+  },
+  {
+    "id": "components.modals.AuthModal.rules",
+    "defaultMessage": "By hitting the \"Register\" button, you agree to the \n    <a href=\"{terms}\" target=\"_blank\">Terms and Conditions</a> \n    and <a href=\"{privacy}\" target=\"_blank\">Privacy Policy</a>",
+    "message": ""
+  },
+  {
+    "id": "components.modals.AuthModal.login",
+    "defaultMessage": "Log In",
+    "message": ""
+  },
+  {
+    "id": "components.modals.AuthModal.register",
+    "defaultMessage": "Register",
+    "message": ""
+  },
+  {
+    "id": "components.modals.SomethingWentWrongModal.title",
+    "defaultMessage": "Something went wrong",
+    "message": ""
+  },
+  {
+    "id": "components.modals.SomethingWentWrongModal.text",
+    "defaultMessage": "We`re having technical issues at that moment. Please try again later",
+    "message": ""
+  },
+  {
+    "id": "components.modals.SomethingWentWrongModal.buttonTitle",
+    "defaultMessage": "Ok",
+    "message": ""
+  },
+  {
+    "id": "pages.HomePage.HomeHero.title",
+    "message": "Децентрализованная экономика нуждается<br />в децентрализованных сервисах"
+  },
+  {
+    "id": "pages.HomePage.HomeHero.subTitle",
+    "message": "&laquo; Мы предоставляем <span>нереально крутые сервисы</span> для ваших проектов &raquo;"
+  },
+  {
+    "id": "pages.HomePage.HomeHero.whitePaper",
+    "message": "White paper"
+  },
+  {
+    "id": "pages.HomePage.HomeHero.checkoutCode",
+    "message": "Посмотреть код"
+  },
+  {
+    "id": "pages.HomePage.HomeHero.Nav.about",
+    "defaultMessage": "About",
+    "message": "О проекте"
+  },
+  {
+    "id": "pages.HomePage.HomeHero.Nav.features",
+    "defaultMessage": "Features",
+    "message": "Фичи"
+  },
+  {
+    "id": "pages.HomePage.HomeHero.Nav.roadmap",
+    "defaultMessage": "Roadmap",
+    "message": "Дорожная карта"
+  }
+]

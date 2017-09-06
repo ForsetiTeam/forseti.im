@@ -1,0 +1,267 @@
+$roadmap-progress-size      : 2px;
+$roadmap-point-size         : 28px;
+$roadmap-color              : #ccd7ff;
+
+
+.roadmap {
+  position: relative;
+  overflow: hidden;
+  padding-top: 50px;
+
+  //&:after {
+  //  content: '';
+  //  display: block;
+  //  width: $roadmap-progress-size;
+  //  background-color: $roadmap-color;
+  //  margin-left: ($roadmap-progress-size / -2);
+  //  position: absolute;
+  //  top: 50px;
+  //  left: 50%;
+  //  bottom: 0;
+  //}
+}
+
+.step {
+  position: relative;
+  margin-top: -20px;
+
+  &:after {
+    content: '';
+    display: block;
+    width: $roadmap-progress-size;
+    background-color: $roadmap-color;
+    margin-left: ($roadmap-progress-size / -2);
+    position: absolute;
+    top: 0;
+    left: 50%;
+    bottom: 20px;
+    z-index: 10;
+  }
+
+  &:first-child {
+    margin-top: 0
+  }
+
+  &:last-child {
+
+    &:before {
+      content: '';
+      display: block;
+      width: $roadmap-progress-size;
+      background-color: #fff;
+      margin-left: ($roadmap-progress-size / -2);
+      position: absolute;
+      top: 0;
+      left: 50%;
+      bottom: 0;
+    }
+
+    &:after {
+      display: none;
+    }
+  }
+
+  &.active {
+
+    &:after {
+      background-color: $color-brand;
+    }
+  }
+
+  &.lastActive {
+
+    &:after {
+      background: linear-gradient($color-brand 0%, $roadmap-color 90%);
+    }
+  }
+}
+
+
+@keyframes pointBlinking {
+
+  0% {
+    transform: rotate(45deg) scale(1);
+    opacity: 0.7;
+  }
+
+  100% {
+    border-width: 3px;
+    transform: rotate(45deg) scale(1.8);
+    opacity: 0;
+  }
+}
+
+.point {
+  width: $roadmap-point-size;
+  height: $roadmap-point-size;
+  margin-top: ($roadmap-point-size / -2 + 1px);
+  margin-left: ($roadmap-point-size / -2);
+  position: absolute;
+  left: 50%;
+  z-index: 70;
+  cursor: default;
+  border-radius: 50%;
+
+  &:before {
+    content: '';
+    display: block;
+    background-color: #fff;
+    border: 2px solid $roadmap-color;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 20;
+    transform: rotate(45deg);
+  }
+
+  .step.active & {
+
+    &:before {
+      background-color: $color-brand;
+      border: 0;
+    }
+  }
+
+  .step.pending & {
+
+    &:after {
+      content: '';
+      display: block;
+      border: 2px solid $roadmap-color;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 30;
+      transform: rotate(45deg);
+      animation: pointBlinking 2s cubic-bezier(0.19, 1, 0.22, 1) infinite;
+    }
+  }
+}
+
+.infoContainer {
+  padding-bottom: 50px;
+
+  .step:nth-child(odd) & {
+    padding-left: 50%
+  }
+
+  .step:nth-child(even) & {
+    width: 50%;
+    text-align: right;
+  }
+}
+
+.info {
+  max-width: 440px;
+  @include inline-block;
+  margin-top: -45px;
+
+  .step:nth-child(odd) & {
+    padding-left: 60px
+  }
+
+  .step:nth-child(even) & {
+    padding-right: 60px
+  }
+}
+
+.date {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: lighten($color-main, 60%);
+}
+
+.title {
+  margin-top: 10px;
+  font-size: 22px;
+  @include ff-opensans-bold;
+  color: #000;
+  text-shadow: #fff 0 0 2px;
+
+  .step.active & {
+    color: $color-brand;
+  }
+}
+
+.details {
+  margin-top: 10px;
+  line-height: 26px;
+  font-size: 15px;
+}
+
+
+
+/* Boxes */
+
+.boxes {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.box {
+  @include square-block;
+  position: absolute;
+
+  &:after {
+    transform: rotate(45deg);
+  }
+}
+
+@keyframes levitation1 {
+  0% { transform: translate3d(0, 0, 0); }
+  100% { transform: translate3d(0, 30px, 0); }
+}
+
+.box1 {
+  width: 120px;
+  top: 200px;
+  left: -150px;
+  animation: levitation1 4s alternate ease-in-out infinite;
+
+  &:after {
+    background-color: #7c55ff;
+    opacity: 0.14;
+  }
+}
+
+@keyframes levitation2 {
+  0% { transform: translate3d(0, 0, 0); }
+  100% { transform: translate3d(0, -40px, 0); }
+}
+
+.box2 {
+  width: 80px;
+  bottom: 80px;
+  right: 20px;
+  animation: levitation2 8s alternate ease-in-out infinite;
+
+  &:after {
+    background-color: #2bff90;
+    opacity: 0.16;
+  }
+}
+
+@keyframes levitation3 {
+  0% { transform: translate3d(0, 0, 0); }
+  100% { transform: translate3d(0, 60px, 0); }
+}
+
+.box3 {
+  width: 40px;
+  bottom: 150px;
+  right: 135px;
+  animation: levitation3 6s alternate ease-in-out infinite;
+
+  &:after {
+    background-color: #00ffea;
+    opacity: 0.17;
+  }
+}

@@ -1,12 +1,16 @@
 import { reducers } from 'redux/core'
 import { getState } from 'helpers'
+import cookie from 'react-cookie'
 
 
 const showLoader = () => reducers.ui.setLoaderVisibility(true)
 
 const hideLoader = () => reducers.ui.setLoaderVisibility(false)
 
-const setLocale = reducers.ui.setLocale
+const setLocale = (locale) => {
+  cookie.save('locale', locale)
+  reducers.ui.setLocale(locale)
+}
 
 const toggleHeaderDropMenuVisibility = (dropMenuName) => {
   const { ui: { headerActiveDropMenuName } } = getState()

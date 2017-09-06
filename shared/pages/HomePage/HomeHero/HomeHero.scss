@@ -18,33 +18,9 @@
 
 .logo {
   text-transform: uppercase;
-  text-align: center;
   font-size: 22px;
   color: #fff;
   @include ff-opensans;
-}
-
-.nav {
-  display: none;
-  font-size: 0;
-}
-
-.navItem {
-  @include inline-block;
-  margin-left: 40px;
-  cursor: pointer;
-  text-transform: uppercase;
-  letter-spacing: 1.1px;
-  font-size: 12px;
-  color: #7772e2;
-
-  &:first-child {
-    margin-left: 0;
-  }
-  
-  &:hover {
-    color: #fff;
-  }
 }
 
 
@@ -88,7 +64,7 @@
   border: 1px solid #7772e2;
   cursor: pointer;
   @include ff-opensans-thin;
-  text-decoration: none;
+  text-decoration: none !important;
   text-transform: uppercase;
   text-align: center;
   font-size: 18px;

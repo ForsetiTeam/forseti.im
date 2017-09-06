@@ -1,23 +1,27 @@
 import React from 'react'
 import { Flex, Box } from 'sb-flexbox'
 
+import { FormattedHTMLMessage } from 'sb-react-intl'
+import messages from './messages'
+
 import cssModules from 'react-css-modules'
 import styles from './HomeHero.scss'
 
 import WidthContainer from 'components/WidthContainer/WidthContainer'
+import Href from 'components/Href/Href'
+
+import Nav from './Nav/Nav'
+import Language from './Language/Language'
 
 
 @cssModules(styles, { allowMultiple: true })
 export default class HomeHero extends React.Component {
 
-  componentWillMount() {
-
-  }
-
   render() {
 
     return (
       <div styleName="hero">
+
         <div styleName="boxes">
           <div styleName="boxGroup boxGroup1">
             <div styleName="box box1" />
@@ -34,29 +38,28 @@ export default class HomeHero extends React.Component {
           <div styleName="box box9" />
           <div styleName="box box10" />
         </div>
+
         <WidthContainer>
           <Flex styleName="header" justify="space-between" align="center">
-            <Box>
+            <Box auto>
               <div styleName="logo">Forseti</div>
             </Box>
             <Box>
-              <div styleName="nav">
-                <div styleName="navItem">About</div>
-                <div styleName="navItem">Features</div>
-                <div styleName="navItem">Nutrition</div>
-                <div styleName="navItem">Start now</div>
-              </div>
+              <Nav />
+            </Box>
+            <Box>
+              <Language />
             </Box>
           </Flex>
         </WidthContainer>
         <div styleName="content">
           <div styleName="centringContainer">
             <div styleName="centringContent">
-              <div styleName="title">Decentralized economy need decentralized services</div>
-              <div styleName="subTitle">&laquo; We provide <span>extremely amazing services</span> for your projects &raquo;</div>
+              <FormattedHTMLMessage styleName="title" tag="div" {...messages.title} />
+              <FormattedHTMLMessage styleName="subTitle" tag="div" {...messages.subTitle} />
               <div styleName="buttons">
-                <a styleName="button" href="https://forseti.im/wp-draft-en.pdf" target="_blank">White Paper</a>
-                <a styleName="button" href="https://github.com/ForsetiTeam" target="_blank">Checkout our code</a>
+                <Href styleName="button" customColor redirect="https://forseti.im/wp-draft-en.pdf" title={messages.whitePaper} />
+                <Href styleName="button" customColor redirect="https://github.com/ForsetiTeam" title={messages.checkoutCode} />
               </div>
             </div>
           </div>

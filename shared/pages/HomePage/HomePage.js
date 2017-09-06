@@ -8,6 +8,7 @@ import Footer from 'components/Footer/Footer'
 
 import HomeHero from './HomeHero/HomeHero'
 import Services from './Services/Services'
+import Roadmap from './Roadmap/Roadmap'
 import Team from './Team/Team'
 // import Achievements from './Achievements/Achievements'
 
@@ -17,6 +18,7 @@ const HomePage = () => (
     <HomeHero />
     <WidthContainer main>
       <Services />
+      <Roadmap />
       <Team />
     </WidthContainer>
     {/*<Achievements />*/}

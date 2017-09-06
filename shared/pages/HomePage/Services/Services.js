@@ -1,4 +1,5 @@
 import React from 'react'
+import cx from 'classnames'
 
 import cssModules from 'react-css-modules'
 import styles from './Services.scss'
@@ -38,18 +39,23 @@ const Services = () => (
   <Section>
     <Title>Forseti <b>Services</b> What is THAT?</Title>
     <div styleName="services">
+      <div styleName="core">
+        <div styleName="coreTitle">Forseti</div>
+      </div>
       {
-        services.map(({ title, desc }, index) => (
-          <div key={index} styleName="serviceContainer">
-            <div styleName="service">
+        services.map(({ title, desc }, index) => {
+          const styleName = cx('service', `service${index + 1}`)
+
+          return (
+            <div key={index} styleName={styleName}>
               <div styleName="title">{title}</div>
-              <div styleName="desc">{desc}</div>
+              <div styleName="details">{desc}</div>
             </div>
-          </div>
-        ))
+          )
+        })
       }
     </div>
   </Section>
 )
 
-export default cssModules(Services, styles)
+export default cssModules(Services, styles, { allowMultiple: true })
