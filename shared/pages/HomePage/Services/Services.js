@@ -1,8 +1,9 @@
 import React from 'react'
-import cx from 'classnames'
 
 import cssModules from 'react-css-modules'
 import styles from './Services.scss'
+
+import WidthContainer from 'components/WidthContainer/WidthContainer'
 
 import Section from '../Section/Section'
 import Title from '../Title/Title'
@@ -37,25 +38,22 @@ const services = [
 
 const Services = () => (
   <Section>
-    <Title>Forseti <b>Services</b> What is THAT?</Title>
-    <div styleName="services">
-      <div styleName="core">
-        <div styleName="coreTitle">Forseti</div>
-      </div>
-      {
-        services.map(({ title, desc }, index) => {
-          const styleName = cx('service', `service${index + 1}`)
-
-          return (
-            <div key={index} styleName={styleName}>
-              <div styleName="title">{title}</div>
-              <div styleName="details">{desc}</div>
+    <WidthContainer>
+      <Title>What are Forseti services?</Title>
+      <div styleName="services">
+        {
+          services.map(({ title, desc }, index) => (
+            <div key={index} styleName="serviceContainer">
+              <div styleName="service">
+                <div styleName="title">{title}</div>
+                <div styleName="desc">{desc}</div>
+              </div>
             </div>
-          )
-        })
-      }
-    </div>
+          ))
+        }
+      </div>
+    </WidthContainer>
   </Section>
 )
 
-export default cssModules(Services, styles, { allowMultiple: true })
+export default cssModules(Services, styles)

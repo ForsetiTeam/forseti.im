@@ -2,87 +2,87 @@
   {
     "id": "components.buttons.CommonButton.back",
     "defaultMessage": "Back",
-    "message": ""
+    "message": "Назад"
   },
   {
     "id": "components.buttons.CommonButton.accept",
     "defaultMessage": "Accept",
-    "message": ""
+    "message": "Подтвердить"
   },
   {
     "id": "components.buttons.CommonButton.cancel",
     "defaultMessage": "Cancel",
-    "message": ""
+    "message": "Отмена"
   },
   {
     "id": "components.buttons.CommonButton.confirm",
     "defaultMessage": "Confirm",
-    "message": ""
+    "message": "Подтвердить"
   },
   {
     "id": "components.buttons.CommonButton.decline",
     "defaultMessage": "Decline",
-    "message": ""
+    "message": "Отказать"
   },
   {
     "id": "components.buttons.CommonButton.login",
     "defaultMessage": "Login",
-    "message": ""
+    "message": "Войти"
   },
   {
     "id": "components.buttons.CommonButton.finish",
     "defaultMessage": "Finish",
-    "message": ""
+    "message": "ОК"
   },
   {
     "id": "components.buttons.CommonButton.reject",
     "defaultMessage": "Reject",
-    "message": ""
+    "message": "Отказать"
   },
   {
     "id": "components.buttons.CommonButton.save",
     "defaultMessage": "Save",
-    "message": ""
+    "message": "Сохранить"
   },
   {
     "id": "components.buttons.CommonButton.submit",
     "defaultMessage": "Submit",
-    "message": ""
+    "message": "Подтвердить"
   },
   {
     "id": "components.modals.AuthModal.loginTitle",
     "defaultMessage": "Log in to your account",
-    "message": ""
+    "message": "Войти в аккаунт"
   },
   {
     "id": "components.modals.AuthModal.registerTitle",
     "defaultMessage": "Create your account",
-    "message": ""
+    "message": "Создать аккаунт"
   },
   {
     "id": "components.modals.AuthModal.email",
     "defaultMessage": "Email",
-    "message": ""
+    "message": "Email"
   },
   {
     "id": "components.modals.AuthModal.password",
     "defaultMessage": "Password",
-    "message": ""
+    "message": "Пароль"
   },
   {
     "id": "components.modals.AuthModal.forgotPassword",
     "defaultMessage": "Forgot your password?",
-    "message": ""
+    "message": "Забыли пароль?"
   },
   {
     "id": "components.modals.AuthModal.dontHaveAnAccount",
     "defaultMessage": "Dont't have an account?",
-    "message": ""
+    "message": "Нет аккаунта?"
   },
   {
     "id": "components.modals.AuthModal.haveAnAccount",
     "defaultMessage": "Have an account?",
-    "message": ""
+    "message": "Есть аккаунт?"
   },
   {
     "id": "components.modals.AuthModal.rules",
@@ -92,17 +92,17 @@
   {
     "id": "components.modals.AuthModal.login",
     "defaultMessage": "Log In",
-    "message": ""
+    "message": "Войти"
   },
   {
     "id": "components.modals.AuthModal.register",
     "defaultMessage": "Register",
-    "message": ""
+    "message": "Зарегистрироваться"
   },
   {
     "id": "components.modals.SomethingWentWrongModal.title",
     "defaultMessage": "Something went wrong",
-    "message": ""
+    "message": "Что-то пошло не так"
   },
   {
     "id": "components.modals.SomethingWentWrongModal.text",
@@ -112,7 +112,17 @@
   {
     "id": "components.modals.SomethingWentWrongModal.buttonTitle",
     "defaultMessage": "Ok",
-    "message": ""
+    "message": "ОК"
+  },
+  {
+    "id": "components.Subscribe.subscribe",
+    "defaultMessage": "Subscribe",
+    "message": "Подписаться"
+  },
+  {
+    "id": "components.Subscribe.desc",
+    "defaultMessage": "Subscribe to be first when ICO launches",
+    "message": "Подпишитесь и узнайте первыми о старте ICO"
   },
   {
     "id": "pages.HomePage.HomeHero.title",
@@ -131,18 +141,28 @@
     "message": "Посмотреть код"
   },
   {
-    "id": "pages.HomePage.HomeHero.Nav.about",
-    "defaultMessage": "About",
-    "message": "О проекте"
+    "id": "pages.HomePage.HomeHero.Nav.whitePaper",
+    "defaultMessage": "White Paper",
+    "message": "White Paper"
   },
   {
-    "id": "pages.HomePage.HomeHero.Nav.features",
-    "defaultMessage": "Features",
-    "message": "Фичи"
+    "id": "pages.HomePage.HomeHero.Nav.github",
+    "defaultMessage": "GitHub",
+    "message": "GitHub"
   },
   {
-    "id": "pages.HomePage.HomeHero.Nav.roadmap",
-    "defaultMessage": "Roadmap",
-    "message": "Дорожная карта"
+    "id": "pages.HomePage.HomeHero.Nav.telegram",
+    "defaultMessage": "Telegram",
+    "message": "Telegram"
+  },
+  {
+    "id": "pages.HomePage.StayTuned.Subscribe.inputPlaceholder",
+    "defaultMessage": "Your email address",
+    "message": "Ваш Email"
+  },
+  {
+    "id": "pages.HomePage.StayTuned.Subscribe.buttonTitle",
+    "defaultMessage": "Subscribe now",
+    "message": "Подписаться сейчас"
   }
 ]

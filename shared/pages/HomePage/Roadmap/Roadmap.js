@@ -11,40 +11,49 @@ import Title from '../Title/Title'
 
 const steps = [
   {
-    date: 1500688921323,
-    title: 'R&D and licensing',
-    details: `
-      research of the African continent to identify the country that is politically stable and<br />
-      reach in natural resources (gold ore). The Republic of Zambia, particularly the district of Kasempa,<br />
-      was picked as the most promising and the process of obtaining mining licenses has been initiated.
-    `,
+    date: 1498867200000,
+    title: 'BlockchainHack 2017',
+    details: 'Hackathon 3-е место (команда BlockJudge), формирование команды',
   },
   {
-    date: 1502688921323,
-    title: 'R&D and licensing',
-    details: `
-      research of the African continent to identify the country that is politically stable and<br />
-      reach in natural resources (gold ore). The Republic of Zambia, particularly the district of Kasempa,<br />
-      was picked as the most promising and the process of obtaining mining licenses has been initiated.
-    `,
+    date: 1504224000000,
+    title: 'Разработка концепта и архитектуры Forseti',
+    details: 'Разработка концепта и архитектуры Forseti',
   },
   {
-    date: 1512688921323,
-    title: 'R&D and licensing',
-    details: `
-      research of the African continent to identify the country that is politically stable and<br />
-      reach in natural resources (gold ore). The Republic of Zambia, particularly the district of Kasempa,<br />
-      was picked as the most promising and the process of obtaining mining licenses has been initiated.
-    `,
+    date: 1509494400000,
+    title: 'Публикация прототипа модуля',
+    details: 'Публикация прототипа модуля безопасной сделки и механизма решения споров (Арбитраж)',
   },
   {
-    date: 1524688921323,
-    title: 'R&D and licensing',
-    details: `
-      research of the African continent to identify the country that is politically stable and<br />
-      reach in natural resources (gold ore). The Republic of Zambia, particularly the district of Kasempa,<br />
-      was picked as the most promising and the process of obtaining mining licenses has been initiated.
-    `,
+    date: 1512086400000,
+    title: 'Pre-sale',
+    details: 'Pre-sale',
+  },
+  {
+    date: 1514764800000,
+    title: 'Публикация MVP',
+    details: 'В МВП будет дополнительно представлен модуль репутации и доработаны модули безопасной сделки и механизма решения споров',
+  },
+  {
+    date: 1517443200000,
+    title: 'TGE',
+    details: 'Token Generation Event',
+  },
+  {
+    date: 1519862400000,
+    title: 'Выход на биржи',
+    details: 'Выход на биржи',
+  },
+  {
+    date: 1525132800000,
+    title: 'Open beta+ bug bounty',
+    details: 'Open beta+ bug bounty',
+  },
+  {
+    date: 1530403200000,
+    title: 'Релиз в мейннет эфириума',
+    details: 'Релиз в мейннет эфириума',
   },
 ]
 
@@ -52,12 +61,12 @@ const now = moment.now()
 
 const Roadmap = () => (
   <Section>
-    <div styleName="boxes">
+    {/*<div styleName="boxes">
       <div styleName="box box1" />
       <div styleName="box box2" />
       <div styleName="box box3" />
-    </div>
-    <Title>Roadmap</Title>
+    </div>*/}
+    <Title center>Roadmap</Title>
     <div styleName="roadmap">
       {
         steps.map(({ date, title, details }, index) => {

@@ -8,7 +8,7 @@ import cssModules from 'react-css-modules'
 import styles from './HomeHero.scss'
 
 import WidthContainer from 'components/WidthContainer/WidthContainer'
-import Href from 'components/Href/Href'
+import Subscribe from 'components/Subscribe/Subscribe'
 
 import Nav from './Nav/Nav'
 import Language from './Language/Language'
@@ -52,18 +52,17 @@ export default class HomeHero extends React.Component {
             </Box>
           </Flex>
         </WidthContainer>
+
         <div styleName="content">
           <div styleName="centringContainer">
             <div styleName="centringContent">
               <FormattedHTMLMessage styleName="title" tag="div" {...messages.title} />
               <FormattedHTMLMessage styleName="subTitle" tag="div" {...messages.subTitle} />
-              <div styleName="buttons">
-                <Href styleName="button" customColor redirect="https://forseti.im/wp-draft-en.pdf" title={messages.whitePaper} />
-                <Href styleName="button" customColor redirect="https://github.com/ForsetiTeam" title={messages.checkoutCode} />
-              </div>
+              <Subscribe styleName="subscribe" />
             </div>
           </div>
         </div>
+
       </div>
     )
   }

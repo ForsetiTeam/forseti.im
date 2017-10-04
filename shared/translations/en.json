@@ -115,6 +115,16 @@
     "message": ""
   },
   {
+    "id": "components.Subscribe.subscribe",
+    "defaultMessage": "Subscribe",
+    "message": ""
+  },
+  {
+    "id": "components.Subscribe.desc",
+    "defaultMessage": "Subscribe to be first when ICO launches",
+    "message": ""
+  },
+  {
     "id": "pages.HomePage.HomeHero.title",
     "defaultMessage": "Decentralized economy need decentralized services",
     "message": ""
@@ -135,18 +145,28 @@
     "message": ""
   },
   {
-    "id": "pages.HomePage.HomeHero.Nav.about",
-    "defaultMessage": "About",
+    "id": "pages.HomePage.HomeHero.Nav.whitePaper",
+    "defaultMessage": "White Paper",
     "message": ""
   },
   {
-    "id": "pages.HomePage.HomeHero.Nav.features",
-    "defaultMessage": "Features",
+    "id": "pages.HomePage.HomeHero.Nav.github",
+    "defaultMessage": "GitHub",
     "message": ""
   },
   {
-    "id": "pages.HomePage.HomeHero.Nav.roadmap",
-    "defaultMessage": "Roadmap",
+    "id": "pages.HomePage.HomeHero.Nav.telegram",
+    "defaultMessage": "Telegram",
+    "message": ""
+  },
+  {
+    "id": "pages.HomePage.StayTuned.Subscribe.inputPlaceholder",
+    "defaultMessage": "Your email address",
+    "message": ""
+  },
+  {
+    "id": "pages.HomePage.StayTuned.Subscribe.buttonTitle",
+    "defaultMessage": "Subscribe now",
     "message": ""
   }
 ]

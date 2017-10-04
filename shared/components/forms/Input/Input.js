@@ -68,7 +68,7 @@ export default class Input extends Component {
     }
 
     const inputElement = React.createElement(multiline ? TextArea : ValueLinkInput, {
-      ...ignoreProps(rest, 'styles', 'styleSpecial'),
+      ...ignoreProps(rest, 'styles', 'styleSpecial', 'rootClassName'),
       styleName: inputStyleName,
       className: inputClassName,
       placeholder: placeholderValue,
@@ -98,11 +98,11 @@ export default class Input extends Component {
   }
 
   render() {
-    const { valueLink, className, disabled, readOnly, hidden } = this.props
+    const { valueLink, className, rootClassName, disabled, readOnly, hidden } = this.props
 
     const error = valueLink.error
 
-    const containerStyleName = cx('root', {
+    const rootStyleName = cx('root', {
       'disabled': disabled || readOnly,
       'errored': error,
       'hidden': hidden,
@@ -120,7 +120,7 @@ export default class Input extends Component {
 
     return (
       <div role="InputComponent" className={className}>
-        <div styleName={containerStyleName}>
+        <div styleName={rootStyleName} className={rootClassName}>
           {this.renderCommonParts()}
         </div>
         {Boolean(error) && errorNode}

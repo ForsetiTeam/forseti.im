@@ -1,7 +1,7 @@
 .footer {
   height: 100px;
   background-color: #201e46;
-  background-image: url(./images/bg.png), url(./images/bg.png);
+  background-image: url(./images/bg.png);
   background-size: 200px auto;
   background-repeat: repeat;
 
@@ -33,27 +33,4 @@
   font-size: 22px;
   color: #fff;
   @include ff-opensans;
-}
-
-
-@include media-except-mobile {
-
-  .footer {
-
-    [role="social"] {
-      width: 40px;
-      margin-left: 20px;
-    }
-  }
-}
-
-@include media-mobile {
-
-  .footer {
-
-    [role="social"] {
-      width: 32px;
-      margin-left: 10px;
-    }
-  }
 }

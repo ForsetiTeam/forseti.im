@@ -3,25 +3,19 @@ import React from 'react'
 import cssModules from 'react-css-modules'
 import styles from './HomePage.scss'
 
-import WidthContainer from 'components/WidthContainer/WidthContainer'
-import Footer from 'components/Footer/Footer'
-
 import HomeHero from './HomeHero/HomeHero'
 import Services from './Services/Services'
 import Roadmap from './Roadmap/Roadmap'
 import Team from './Team/Team'
-// import Achievements from './Achievements/Achievements'
+import Footer from './Footer/Footer'
 
 
 const HomePage = () => (
-  <div>
+  <div styleName="wrapper">
     <HomeHero />
-    <WidthContainer main>
-      <Services />
-      <Roadmap />
-      <Team />
-    </WidthContainer>
-    {/*<Achievements />*/}
+    <Services />
+    <Roadmap />
+    <Team />
     <Footer />
   </div>
 )

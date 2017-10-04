@@ -1,6 +1,6 @@
 $roadmap-progress-size      : 2px;
-$roadmap-point-size         : 28px;
-$roadmap-color              : #ccd7ff;
+$roadmap-point-size         : 22px;
+$roadmap-color              : #fff;
 
 
 /* Boxes */
@@ -76,6 +76,7 @@ $roadmap-color              : #ccd7ff;
 
 
 .roadmap {
+  width: 100%;
   position: relative;
   overflow: hidden;
   padding-top: 50px;
@@ -114,34 +115,23 @@ $roadmap-color              : #ccd7ff;
 
   &:last-child {
 
-    &:before {
-      content: '';
-      display: block;
-      width: $roadmap-progress-size;
-      background-color: #fff;
-      margin-left: ($roadmap-progress-size / -2);
-      position: absolute;
-      top: 0;
-      left: 50%;
-      bottom: 0;
-    }
-
     &:after {
-      display: none;
+      background: linear-gradient($roadmap-color 0%, transparent 100%);
+      bottom: 0;
     }
   }
 
   &.active {
 
     &:after {
-      background-color: $color-brand;
+      background-color: $color-ocean;
     }
   }
 
   &.lastActive {
 
     &:after {
-      background: linear-gradient($color-brand 0%, $roadmap-color 90%);
+      background: linear-gradient($color-ocean 0%, $roadmap-color 90%);
     }
   }
 }
@@ -156,7 +146,7 @@ $roadmap-color              : #ccd7ff;
 
   100% {
     border-width: 3px;
-    transform: rotate(45deg) scale(1.8);
+    transform: rotate(45deg) scale(1.9);
     opacity: 0;
   }
 }
@@ -168,26 +158,26 @@ $roadmap-color              : #ccd7ff;
   position: absolute;
   z-index: 70;
   cursor: default;
-  border-radius: 50%;
 
   &:before {
     content: '';
     display: block;
     background-color: #fff;
-    border: 2px solid $roadmap-color;
+    border: 2px solid #fff;
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     z-index: 20;
+    border-radius: 4px;
     transform: rotate(45deg);
   }
 
   .step.active & {
 
     &:before {
-      background-color: $color-brand;
+      background-color: $color-ocean;
       border: 0;
     }
   }
@@ -204,8 +194,9 @@ $roadmap-color              : #ccd7ff;
       right: 0;
       bottom: 0;
       z-index: 30;
+      border-radius: 4px;
       transform: rotate(45deg);
-      animation: pointBlinking 2s cubic-bezier(0.19, 1, 0.22, 1) infinite;
+      animation: pointBlinking 1.6s cubic-bezier(0.19, 1, 0.22, 1) infinite;
     }
   }
 }
@@ -219,18 +210,22 @@ $roadmap-color              : #ccd7ff;
 .date {
   font-size: 14px;
   text-transform: uppercase;
-  color: lighten($color-main, 60%);
+  @include ff-opensans-bold;
+  color: $color-ocean;
+
+  .step.active & {
+    color: #fff;
+  }
 }
 
 .title {
   margin-top: 10px;
   font-size: 22px;
   @include ff-opensans-bold;
-  color: #000;
-  text-shadow: #fff 0 0 2px;
+  color: #fff;
 
   .step.active & {
-    color: $color-brand;
+    color: $color-ocean;
   }
 }
 
@@ -238,6 +233,7 @@ $roadmap-color              : #ccd7ff;
   margin-top: 10px;
   line-height: 26px;
   font-size: 15px;
+  color: #736fb7;
 }
 
 
@@ -257,7 +253,7 @@ $roadmap-color              : #ccd7ff;
   }
 
   .infoContainer {
-    padding-bottom: 50px;
+    padding-bottom: 70px;
 
     .step:nth-child(odd) & {
       padding-left: 50%

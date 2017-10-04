@@ -1,0 +1,46 @@
+.input {
+  width: 240px;
+  height: 46px;
+  line-height: 46px;
+  padding: 0 20px;
+  background: none;
+  border: 1px solid #fff;
+  margin-right: 20px;
+  box-sizing: content-box;
+  font-size: 16px;
+  color: #fff;
+
+  &:focus {
+    border-color: #b7e0ff;
+  }
+}
+
+.button {
+  @include inline-block;
+  height: 46px;
+  line-height: 46px;
+  border: 1px solid #00ff8a;
+  padding: 0 20px;
+  box-sizing: content-box;
+  cursor: pointer;
+  @include ff-opensans;
+  text-decoration: none !important;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 16px;
+  color: #00ff8a;
+
+  &:hover {
+    border-color: #62ffd1;
+    color: #62ffd1;
+    box-shadow: #62ffd1 0 0 2px;
+  }
+}
+
+.desc {
+  margin-top: 15px;
+  letter-spacing: 1.2px;
+  text-align: center;
+  font-size: 16px;
+  color: #fff;
+}

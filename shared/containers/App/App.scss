@@ -41,6 +41,7 @@ input {
 }
 
 input, textarea {
+
   @include placeholder {
     color: $color-input-placeholder !important;
   }
@@ -57,16 +58,16 @@ input, textarea, button, select {
   }
 }
 
-input, textarea, select {
-
-  &:-webkit-autofill {
-    background-color: #fff !important;
-  }
-
-  &:focus {
-    background-color: #fff !important;
-  }
-}
+//input, textarea, select {
+//
+//  &:-webkit-autofill {
+//    background-color: #fff !important;
+//  }
+//
+//  &:focus {
+//    background-color: #fff !important;
+//  }
+//}
 
 select:-moz-focusring {
   color: transparent;

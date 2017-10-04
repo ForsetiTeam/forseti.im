@@ -13,12 +13,14 @@ const Mates = ({ mates, advisers }) => (
             <div styleName="avatar">
               <img src={avatar} />
             </div>
-            <div styleName="name">{name}</div>
-            {
-              Boolean(role) && (
-                <div styleName="role">{role}</div>
-              )
-            }
+            <div styleName="info">
+              {
+                Boolean(role) && (
+                  <div styleName="role">{role}</div>
+                )
+              }
+              <div styleName="name">{name}</div>
+            </div>
           </div>
         </div>
       ))

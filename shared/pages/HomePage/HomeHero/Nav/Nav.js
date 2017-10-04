@@ -1,26 +1,28 @@
 import React from 'react'
+import { connect } from 'redaction/immutable'
 
-import { FormattedMessage } from 'sb-react-intl'
 import messages from './messages'
 
 import cssModules from 'react-css-modules'
 import styles from './Nav.scss'
 
+import Href from 'components/Href/Href'
 
-const nav = [
-  { title: messages.about },
-  { title: messages.features },
-  { title: messages.roadmap },
-]
 
-const Nav = () => (
+const Nav = ({ items }) => (
   <div styleName="nav">
     {
-      nav.map(({ title }, index) => (
-        <FormattedMessage key={index} styleName="navItem" {...title} />
+      items.map((item, index) => (
+        <Href key={index} styleName="navItem" {...item} customColor />
       ))
     }
   </div>
 )
 
-export default cssModules(Nav, styles)
+export default connect({
+  items: ({ ui: { locale } }) => [
+    { title: messages.whitePaper, redirect: `/white-paper-${locale}.pdf` },
+    { title: messages.github, redirect: 'https://github.com/ForsetiTeam' },
+    { title: messages.telegram, redirect: `https://t.me/${locale === 'en' ? 'forseti_channel' : 'forseti_chat_ru' }` },
+  ],
+})(cssModules(Nav, styles))

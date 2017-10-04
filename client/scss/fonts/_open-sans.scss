@@ -1,0 +1,32 @@
+$path: 'fonts/open-sans/OpenSans';
+
+
+@font-face {
+  font-family: 'Open Sans Bold';
+  src: url($path + 'Bold.eot');
+  src: url($path + 'Bold.eot?#iefix') format('embedded-opentype'),
+  url($path + 'Bold.woff') format('woff'),
+  url($path + 'Bold.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'Open Sans Light';
+  src: url($path + 'Light.eot');
+  src: url($path + 'Light.eot?#iefix') format('embedded-opentype'),
+  url($path + 'Light.woff') format('woff'),
+  url($path + 'Light.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Open Sans Regular';
+  src: url($path + 'Regular.eot');
+  src: url($path + 'Regular.eot?#iefix') format('embedded-opentype'),
+  url($path + 'Regular.woff') format('woff'),
+  url($path + 'Regular.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}

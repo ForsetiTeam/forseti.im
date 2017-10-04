@@ -7,32 +7,32 @@ import Section from '../Section/Section'
 import Title from '../Title/Title'
 import Mates from './Mates/Mates'
 
-import alexNikolaevAvatar from './images/alexnikolaev2.jpg'
-import pavelIvanovAvatar from './images/pavelivanov2.jpg'
-import denisKaiserAvatar from './images/deniskaiser2.jpg'
-import vladinirManzukAvatar from './images/vladimirmanzuk2.jpg'
-import noxonAvatar from './images/noxon2.jpg'
-import andreyRebrovAvatar from './images/andreyrebrov.jpg'
+import sashaAvatar from './images/sasha.jpg'
+import pashaAvatar from './images/pasha.jpg'
+import denisAvatar from './images/denis.jpg'
+import vovaAvatar from './images/vova.jpg'
+import noxonAvatar from './images/noxon.jpg'
+import andreyAvatar from './images/andrey.jpg'
 
 
 const team = [
   {
-    avatar: alexNikolaevAvatar,
+    avatar: sashaAvatar,
     name: 'Alex Nikolaev',
     role: 'CEO',
   },
   {
-    avatar: pavelIvanovAvatar,
+    avatar: pashaAvatar,
     name: 'Pavel Ivanov',
     role: 'CTO',
   },
   {
-    avatar: denisKaiserAvatar,
+    avatar: denisAvatar,
     name: 'Denis Kaiser',
     role: 'Blockchain developer',
   },
   {
-    avatar: vladinirManzukAvatar,
+    avatar: vovaAvatar,
     name: 'Vladimir Manzuk',
     role: 'Analyst',
   },
@@ -42,7 +42,7 @@ const team = [
     role: 'Adviser',
   },
   {
-    avatar: andreyRebrovAvatar,
+    avatar: andreyAvatar,
     name: 'Andrey Rebrov',
     role: 'Adviser',
   },

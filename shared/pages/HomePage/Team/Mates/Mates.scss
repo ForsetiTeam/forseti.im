@@ -1,10 +1,13 @@
 .mates {
-  font-size: 0;
+  max-width: 900px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: -30px auto;
 }
 
 .mateContainer {
-  padding: 20px;
-  @include inline-block;
+  padding: 30px;
 
   .advisers & {
     width: 100%;
@@ -15,6 +18,8 @@
   max-width: 300px;
   margin: 0 auto;
   position: relative;
+  box-shadow: rgba(#000, 0.23) 0 3px 10px;
+  @include no-user-select;
 }
 
 .avatar {
@@ -32,36 +37,30 @@
   }
 }
 
-.name {
-  height: 24px;
-  padding-top: 5px;
+.info {
+  width: 100%;
+  background: linear-gradient(transparent 0%, rgba(#400d3e, 0.7) 100%);
+  padding: 30px 10px 10px;
   position: absolute;
-  bottom: -26px;
-  right: 50%;
-  z-index: 20;
-  white-space: nowrap;
-  line-height: 24px;
-  text-transform: uppercase;
-  text-align: right;
-  font-size: 20px;
-  transform: rotate(45deg);
-  transform-origin: 100% 0;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
 }
 
 .role {
-  width: 63%;
-  line-height: 24px;
-  position: absolute;
-  bottom: -26px;
-  left: 50%;
-  z-index: 20;
   white-space: nowrap;
   text-transform: uppercase;
-  text-align: right;
-  font-size: 15px;
-  color: #3228ff;
-  transform: rotate(-45deg);
-  transform-origin: 0 0;
+  font-size: 14px;
+  color: $color-ocean;
+}
+
+.name {
+  margin-top: 5px;
+  white-space: nowrap;
+  line-height: 20px;
+  text-transform: uppercase;
+  font-size: 20px;
+  color: #fff;
 }
 
 

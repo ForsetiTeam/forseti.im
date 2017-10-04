@@ -1,10 +1,6 @@
 .hero {
-  background-color: #201e46;
-  background-image: url(./images/bg.png), url(./images/bg.png);
-  background-size: 200px auto;
-  background-repeat: repeat;
-  position: relative;
   overflow: hidden;
+  position: relative;
   @include no-user-select;
 }
 
@@ -36,15 +32,16 @@
 .title {
   margin-top: -20px;
   @include ff-opensans-bold;
+  letter-spacing: 1.2px;
   text-transform: uppercase;
   text-align: center;
   color: #fff;
 }
 
 .subTitle {
-  @include ff-opensans-thin;
+  @include ff-opensans-light;
   text-align: center;
-  color: #00ff99;
+  color: $color-ocean;
 
   span {
     padding: 0 3px;
@@ -56,22 +53,22 @@
 
 .button {
   @include inline-block;
-  height: 40px;
-  line-height: 38px;
-  border: 1px solid #7772e2;
+  height: 46px;
+  line-height: 46px;
+  border: 1px solid #b3bcea;
+  box-sizing: content-box;
   cursor: pointer;
-  @include ff-opensans-thin;
+  @include ff-opensans;
   text-decoration: none !important;
   text-transform: uppercase;
   text-align: center;
-  font-size: 18px;
-  color: #7772e2;
-  border-radius: 20px;
+  font-size: 16px;
+  color: #b3bcea;
 
   &:hover {
-    border-color: #6d66ff;
-    color: #6d66ff;
-    box-shadow: #6d66ff 0 0 2px;
+    border-color: #fff;
+    color: #fff;
+    box-shadow: #fff 0 0 2px;
   }
 }
 
@@ -80,10 +77,10 @@
 
 .boxes {
   width: 100%;
-  height: 100%;
   position: absolute;
   top: 0;
   left: 0;
+  bottom: 200px;
   z-index: 10;
 }
 
@@ -106,6 +103,7 @@
     background-repeat: repeat;
     transform-origin: center;
     transform: rotate(45deg);
+    border-radius: 4px;
   }
 }
 
@@ -128,7 +126,7 @@
 
   &:after {
     background-color: #407bff;
-    opacity: 0.4;
+    opacity: 0.2;
   }
 }
 
@@ -279,6 +277,9 @@
 
   .hero {
     height: 100vh;
+    box-sizing: content-box;
+    padding-bottom: 200px;
+    margin-bottom: -200px;
   }
 
   .content {
@@ -286,7 +287,7 @@
     top: 0;
     left: 0;
     right: 0;
-    bottom: 0;
+    bottom: 200px;
   }
 
   .centringContainer {
@@ -316,12 +317,16 @@
   }
 
   .title {
-    font-size: 36px;
+    font-size: 30px;
   }
 
   .subTitle {
     margin-top: 25px;
-    font-size: 26px;
+    font-size: 18px;
+
+    span {
+      font-size: 22px;
+    }
   }
 
   .buttons {
@@ -337,6 +342,10 @@
     &:first-child {
       margin-left: 0;
     }
+  }
+
+  .subscribe {
+    margin-top: 70px;
   }
 }
 
@@ -368,6 +377,10 @@
     &:first-child {
       margin-top: 0;
     }
+  }
+
+  .subscribe {
+    margin-top: 40px;
   }
 
   .boxes {
