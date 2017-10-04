@@ -1,5 +1,8 @@
 import React from 'react'
 
+import { FormattedMessage } from 'sb-react-intl'
+import messages from './messages'
+
 import cssModules from 'react-css-modules'
 import styles from './Services.scss'
 
@@ -39,7 +42,7 @@ const services = [
 const Services = () => (
   <Section>
     <WidthContainer>
-      <Title>What are Forseti services?</Title>
+      <Title {...messages.title} />
       <div styleName="services">
         {
           services.map(({ title, desc }, index) => (

@@ -50,71 +50,6 @@
     "message": ""
   },
   {
-    "id": "components.modals.AuthModal.loginTitle",
-    "defaultMessage": "Log in to your account",
-    "message": ""
-  },
-  {
-    "id": "components.modals.AuthModal.registerTitle",
-    "defaultMessage": "Create your account",
-    "message": ""
-  },
-  {
-    "id": "components.modals.AuthModal.email",
-    "defaultMessage": "Email",
-    "message": ""
-  },
-  {
-    "id": "components.modals.AuthModal.password",
-    "defaultMessage": "Password",
-    "message": ""
-  },
-  {
-    "id": "components.modals.AuthModal.forgotPassword",
-    "defaultMessage": "Forgot your password?",
-    "message": ""
-  },
-  {
-    "id": "components.modals.AuthModal.dontHaveAnAccount",
-    "defaultMessage": "Dont't have an account?",
-    "message": ""
-  },
-  {
-    "id": "components.modals.AuthModal.haveAnAccount",
-    "defaultMessage": "Have an account?",
-    "message": ""
-  },
-  {
-    "id": "components.modals.AuthModal.rules",
-    "defaultMessage": "By hitting the \"Register\" button, you agree to the \n    <a href=\"{terms}\" target=\"_blank\">Terms and Conditions</a> \n    and <a href=\"{privacy}\" target=\"_blank\">Privacy Policy</a>",
-    "message": ""
-  },
-  {
-    "id": "components.modals.AuthModal.login",
-    "defaultMessage": "Log In",
-    "message": ""
-  },
-  {
-    "id": "components.modals.AuthModal.register",
-    "defaultMessage": "Register",
-    "message": ""
-  },
-  {
-    "id": "components.modals.SomethingWentWrongModal.title",
-    "defaultMessage": "Something went wrong",
-    "message": ""
-  },
-  {
-    "id": "components.modals.SomethingWentWrongModal.text",
-    "defaultMessage": "We`re having technical issues at that moment. Please try again later",
-    "message": ""
-  },
-  {
-    "id": "components.modals.SomethingWentWrongModal.buttonTitle",
-    "defaultMessage": "Ok",
-    "message": ""
-  },
-  {
     "id": "components.Subscribe.subscribe",
     "defaultMessage": "Subscribe",
     "message": ""
@@ -160,6 +95,16 @@
     "message": ""
   },
   {
+    "id": "pages.HomePage.Roadmap.title",
+    "defaultMessage": "Roadmap",
+    "message": ""
+  },
+  {
+    "id": "pages.HomePage.Services.title",
+    "defaultMessage": "What are Forseti services?",
+    "message": ""
+  },
+  {
     "id": "pages.HomePage.StayTuned.Subscribe.inputPlaceholder",
     "defaultMessage": "Your email address",
     "message": ""
@@ -167,6 +112,16 @@
   {
     "id": "pages.HomePage.StayTuned.Subscribe.buttonTitle",
     "defaultMessage": "Subscribe now",
+    "message": ""
+  },
+  {
+    "id": "pages.HomePage.Team.title",
+    "defaultMessage": "Meet Forseti Team",
+    "message": ""
+  },
+  {
+    "id": "pages.HomePage.TokenSale.title",
+    "defaultMessage": "Token sale",
     "message": ""
   }
 ]

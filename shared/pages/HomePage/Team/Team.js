@@ -1,5 +1,8 @@
 import React from 'react'
 
+import { FormattedMessage } from 'sb-react-intl'
+import messages from './messages'
+
 import cssModules from 'react-css-modules'
 import styles from './Team.scss'
 
@@ -50,7 +53,7 @@ const team = [
 
 const Team = () => (
   <Section>
-    <Title>Meet Forseti <b>Team</b></Title>
+    <Title {...messages.title} />
     <Mates mates={team} />
   </Section>
 )

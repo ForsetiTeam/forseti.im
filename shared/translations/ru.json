@@ -1,127 +1,50 @@
 [
   {
     "id": "components.buttons.CommonButton.back",
-    "defaultMessage": "Back",
     "message": "Назад"
   },
   {
     "id": "components.buttons.CommonButton.accept",
-    "defaultMessage": "Accept",
     "message": "Подтвердить"
   },
   {
     "id": "components.buttons.CommonButton.cancel",
-    "defaultMessage": "Cancel",
     "message": "Отмена"
   },
   {
     "id": "components.buttons.CommonButton.confirm",
-    "defaultMessage": "Confirm",
     "message": "Подтвердить"
   },
   {
     "id": "components.buttons.CommonButton.decline",
-    "defaultMessage": "Decline",
     "message": "Отказать"
   },
   {
     "id": "components.buttons.CommonButton.login",
-    "defaultMessage": "Login",
     "message": "Войти"
   },
   {
     "id": "components.buttons.CommonButton.finish",
-    "defaultMessage": "Finish",
     "message": "ОК"
   },
   {
     "id": "components.buttons.CommonButton.reject",
-    "defaultMessage": "Reject",
     "message": "Отказать"
   },
   {
     "id": "components.buttons.CommonButton.save",
-    "defaultMessage": "Save",
     "message": "Сохранить"
   },
   {
     "id": "components.buttons.CommonButton.submit",
-    "defaultMessage": "Submit",
     "message": "Подтвердить"
   },
   {
-    "id": "components.modals.AuthModal.loginTitle",
-    "defaultMessage": "Log in to your account",
-    "message": "Войти в аккаунт"
-  },
-  {
-    "id": "components.modals.AuthModal.registerTitle",
-    "defaultMessage": "Create your account",
-    "message": "Создать аккаунт"
-  },
-  {
-    "id": "components.modals.AuthModal.email",
-    "defaultMessage": "Email",
-    "message": "Email"
-  },
-  {
-    "id": "components.modals.AuthModal.password",
-    "defaultMessage": "Password",
-    "message": "Пароль"
-  },
-  {
-    "id": "components.modals.AuthModal.forgotPassword",
-    "defaultMessage": "Forgot your password?",
-    "message": "Забыли пароль?"
-  },
-  {
-    "id": "components.modals.AuthModal.dontHaveAnAccount",
-    "defaultMessage": "Dont't have an account?",
-    "message": "Нет аккаунта?"
-  },
-  {
-    "id": "components.modals.AuthModal.haveAnAccount",
-    "defaultMessage": "Have an account?",
-    "message": "Есть аккаунт?"
-  },
-  {
-    "id": "components.modals.AuthModal.rules",
-    "defaultMessage": "By hitting the \"Register\" button, you agree to the \n    <a href=\"{terms}\" target=\"_blank\">Terms and Conditions</a> \n    and <a href=\"{privacy}\" target=\"_blank\">Privacy Policy</a>",
-    "message": ""
-  },
-  {
-    "id": "components.modals.AuthModal.login",
-    "defaultMessage": "Log In",
-    "message": "Войти"
-  },
-  {
-    "id": "components.modals.AuthModal.register",
-    "defaultMessage": "Register",
-    "message": "Зарегистрироваться"
-  },
-  {
-    "id": "components.modals.SomethingWentWrongModal.title",
-    "defaultMessage": "Something went wrong",
-    "message": "Что-то пошло не так"
-  },
-  {
-    "id": "components.modals.SomethingWentWrongModal.text",
-    "defaultMessage": "We`re having technical issues at that moment. Please try again later",
-    "message": ""
-  },
-  {
-    "id": "components.modals.SomethingWentWrongModal.buttonTitle",
-    "defaultMessage": "Ok",
-    "message": "ОК"
-  },
-  {
     "id": "components.Subscribe.subscribe",
-    "defaultMessage": "Subscribe",
     "message": "Подписаться"
   },
   {
     "id": "components.Subscribe.desc",
-    "defaultMessage": "Subscribe to be first when ICO launches",
     "message": "Подпишитесь и узнайте первыми о старте ICO"
   },
   {
@@ -142,27 +65,40 @@
   },
   {
     "id": "pages.HomePage.HomeHero.Nav.whitePaper",
-    "defaultMessage": "White Paper",
     "message": "White Paper"
   },
   {
     "id": "pages.HomePage.HomeHero.Nav.github",
-    "defaultMessage": "GitHub",
     "message": "GitHub"
   },
   {
     "id": "pages.HomePage.HomeHero.Nav.telegram",
-    "defaultMessage": "Telegram",
     "message": "Telegram"
   },
   {
+    "id": "pages.HomePage.Roadmap.title",
+    "defaultMessage": "Roadmap",
+    "message": ""
+  },
+  {
+    "id": "pages.HomePage.Services.title",
+    "message": "Сервисы Forseti"
+  },
+  {
     "id": "pages.HomePage.StayTuned.Subscribe.inputPlaceholder",
-    "defaultMessage": "Your email address",
     "message": "Ваш Email"
   },
   {
     "id": "pages.HomePage.StayTuned.Subscribe.buttonTitle",
-    "defaultMessage": "Subscribe now",
     "message": "Подписаться сейчас"
+  },
+  {
+    "id": "pages.HomePage.Team.title",
+    "message": "Команда Forseti"
+  },
+  {
+    "id": "pages.HomePage.TokenSale.title",
+    "defaultMessage": "Token sale",
+    "message": ""
   }
 ]

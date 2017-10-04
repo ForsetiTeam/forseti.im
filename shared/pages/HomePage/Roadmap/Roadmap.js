@@ -2,6 +2,8 @@ import React from 'react'
 import moment from 'moment'
 import cx from 'classnames'
 
+import messages from './messages'
+
 import cssModules from 'react-css-modules'
 import styles from './Roadmap.scss'
 
@@ -66,7 +68,7 @@ const Roadmap = () => (
       <div styleName="box box2" />
       <div styleName="box box3" />
     </div>*/}
-    <Title center>Roadmap</Title>
+    <Title {...messages.title} />
     <div styleName="roadmap">
       {
         steps.map(({ date, title, details }, index) => {

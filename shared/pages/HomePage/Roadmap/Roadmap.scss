@@ -146,6 +146,7 @@ $roadmap-color              : #fff;
 
   100% {
     border-width: 3px;
+    border-color: $color-ocean;
     transform: rotate(45deg) scale(1.9);
     opacity: 0;
   }
@@ -162,7 +163,7 @@ $roadmap-color              : #fff;
   &:before {
     content: '';
     display: block;
-    background-color: #fff;
+    background-color: #211f46;
     border: 2px solid #fff;
     position: absolute;
     top: 0;
@@ -183,6 +184,10 @@ $roadmap-color              : #fff;
   }
 
   .step.pending & {
+    
+    &:before {
+      background-color: #fff;
+    }
 
     &:after {
       content: '';
@@ -211,7 +216,8 @@ $roadmap-color              : #fff;
   font-size: 14px;
   text-transform: uppercase;
   @include ff-opensans-bold;
-  color: $color-ocean;
+  // color: $color-ocean;
+  color: #006f3d;
 
   .step.active & {
     color: #fff;
@@ -233,7 +239,7 @@ $roadmap-color              : #fff;
   margin-top: 10px;
   line-height: 26px;
   font-size: 15px;
-  color: #736fb7;
+  color: #98a2da;
 }
 
 

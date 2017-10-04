@@ -1,0 +1,109 @@
+.caps {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cap {
+  position: relative;
+
+  &:before {
+    content: '';
+    display: block;
+    width: 2px;
+    height: 80px;
+    background-color: #736fb7;
+    opacity: 0.4;
+    position: absolute;
+    bottom: 0;
+  }
+
+  &.minimal {
+
+    &:before {
+      left: 0;
+    }
+  }
+
+  &.maximal {
+
+    &:before {
+      right: 0;
+    }
+  }
+}
+
+.arrow {
+  position: absolute;
+  bottom: 12px;
+  opacity: 0.4;
+
+  &:after {
+    content: '';
+    display: block;
+    height: 2px;
+    background-color: #736fb7;
+    margin-top: -1px;
+    position: absolute;
+    top: 50%;
+  }
+
+  .minimal & {
+    left: 20px;
+
+    &:before {
+      @include arrow('left', 14px, 2px, #736fb7);
+    }
+
+    &:after {
+      width: 72px;
+      left: 0;
+    }
+  }
+
+  .maximal & {
+    right: 20px;
+
+    &:before {
+      @include arrow('right', 14px, 2px, #736fb7);
+    }
+
+    &:after {
+      width: 68px;
+      right: 0;
+    }
+  }
+}
+
+.amount {
+  position: absolute;
+  bottom: 36px;
+  font-size: 32px;
+  color: $color-ocean;
+
+  .minimal & {
+    left: 20px;
+  }
+
+  .maximal & {
+    right: 20px;
+  }
+}
+
+.label {
+  position: absolute;
+  bottom: 12px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  line-height: 16px;
+  font-size: 16px;
+  color: #fff;
+
+  .minimal & {
+    left: 108px;
+  }
+
+  .maximal & {
+    right: 104px;
+  }
+}
