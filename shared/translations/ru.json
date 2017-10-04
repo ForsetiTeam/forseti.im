@@ -97,8 +97,38 @@
     "message": "Команда Forseti"
   },
   {
+    "id": "pages.HomePage.TokenSale.Capacity.minimal",
+    "defaultMessage": "Soft cap",
+    "message": "Soft cap"
+  },
+  {
+    "id": "pages.HomePage.TokenSale.Capacity.maximal",
+    "defaultMessage": "Hard cap",
+    "message": "Hard cap"
+  },
+  {
     "id": "pages.HomePage.TokenSale.title",
     "defaultMessage": "Token sale",
-    "message": ""
+    "message": "Распродажа токенов"
+  },
+  {
+    "id": "pages.HomePage.TokenSale.bounty",
+    "defaultMessage": "3% <span>Bounty</span>",
+    "message": "3% <span>Баунти</span>"
+  },
+  {
+    "id": "pages.HomePage.TokenSale.team",
+    "defaultMessage": "20% <span>Team</span>",
+    "message": "20% <span>Команда</span>"
+  },
+  {
+    "id": "pages.HomePage.TokenSale.preSale",
+    "defaultMessage": "4% <span>Pre Sale</span>",
+    "message": "4% <span>Pre Sale</span>"
+  },
+  {
+    "id": "pages.HomePage.TokenSale.sale",
+    "defaultMessage": "73% <span>Sale</span>",
+    "message": "73% <span>Sale</span>"
   }
 ]

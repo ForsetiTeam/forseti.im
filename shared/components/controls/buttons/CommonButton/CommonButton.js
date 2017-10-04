@@ -7,8 +7,9 @@ import messages from './messages'
 import Button from 'components/controls/Button/Button'
 
 
+const titleKeys = 'accept back cancel confirm decline login finish reject save submit'.split(' ')
+
 const CommonButton = ({ h, title, ...props }) => {
-  const titleKeys = 'accept back cancel confirm decline login finish reject save submit'.split(' ')
   const titleKey = titleKeys.filter((key) => Boolean(props[key]))[0]
   const rest = ignoreProps.call(null, props, ...titleKeys)
 

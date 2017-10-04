@@ -1,0 +1,35 @@
+.icon {
+  display: inline-table;
+
+  svg {
+    width: 100%;
+    display: block;
+  }
+
+  &.escrow {
+    /* empty */
+  }
+
+  &.arbitrage {
+    /* empty */
+  }
+
+  &.reputation {
+    /* empty */
+  }
+
+  &.identity {
+    /* empty */
+  }
+
+  &.auction {
+    /* empty */
+  }
+
+  &.referral {
+
+    svg {
+      margin-top: -15%;
+    }
+  }
+}

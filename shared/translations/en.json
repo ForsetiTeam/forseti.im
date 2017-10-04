@@ -120,8 +120,38 @@
     "message": ""
   },
   {
+    "id": "pages.HomePage.TokenSale.Capacity.minimal",
+    "defaultMessage": "Soft cap",
+    "message": ""
+  },
+  {
+    "id": "pages.HomePage.TokenSale.Capacity.maximal",
+    "defaultMessage": "Hard cap",
+    "message": ""
+  },
+  {
     "id": "pages.HomePage.TokenSale.title",
     "defaultMessage": "Token sale",
+    "message": ""
+  },
+  {
+    "id": "pages.HomePage.TokenSale.bounty",
+    "defaultMessage": "3% <span>Bounty</span>",
+    "message": ""
+  },
+  {
+    "id": "pages.HomePage.TokenSale.team",
+    "defaultMessage": "20% <span>Team</span>",
+    "message": ""
+  },
+  {
+    "id": "pages.HomePage.TokenSale.preSale",
+    "defaultMessage": "4% <span>Pre Sale</span>",
+    "message": ""
+  },
+  {
+    "id": "pages.HomePage.TokenSale.sale",
+    "defaultMessage": "73% <span>Sale</span>",
     "message": ""
   }
 ]

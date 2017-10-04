@@ -1,19 +1,133 @@
+$service-circle-size: 100px;
+
+
+.content {
+  width: 600px;
+  height: 500px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.forseti {
+  width: 140px;
+  height: 140px;
+  background-color: #201F44;
+  border: 2px solid #fff;
+  @include absolute-centring;
+  z-index: 30;
+  line-height: 140px;
+  @include ff-opensans-light;
+  text-align: center;
+  font-size: 80px;
+  color: #fff;
+  border-radius: 50%;
+}
+
+.lines {
+  width: 0;
+  height: 0;
+  @include absolute-centring;
+  z-index: 10;
+}
+
+.line {
+  width: 190px;
+  height: 2px;
+  background: linear-gradient(to left, $color-ocean 0%, #fff 100%);
+  position: absolute;
+  top: 50%;
+  transform-origin: 0 0;
+
+  &:nth-child(1) {
+    transform: rotate(-121deg);
+  }
+
+  &:nth-child(2) {
+    transform: rotate(-59deg);
+  }
+
+  &:nth-child(3) {
+    transform: rotate(0deg);
+  }
+
+  &:nth-child(4) {
+    transform: rotate(59deg);
+  }
+
+  &:nth-child(5) {
+    transform: rotate(121deg);
+  }
+
+  &:nth-child(6) {
+    transform: rotate(180deg);
+  }
+}
+
 .services {
-  display: flex;
-  flex-wrap: wrap;
-  margin: -20px -15px 0;
+  display: block;
 }
 
 .serviceContainer {
-  margin-top: 40px;
-  display: flex;
+  position: absolute;
+  z-index: 30;
+
+  &:nth-child(1) {
+    left: 30%;
+    margin-left: -($service-circle-size / 2);
+  }
+
+  &:nth-child(2) {
+    right: 30%;
+    margin-right: -($service-circle-size / 2);
+  }
+
+  &:nth-child(3) {
+    top: 50%;
+    right: 2%;
+    transform: translate3d(0, -50%, 0);
+  }
+
+  &:nth-child(4) {
+    right: 30%;
+    bottom: 0;
+    margin-right: -($service-circle-size / 2);
+  }
+
+  &:nth-child(5) {
+    left: 30%;
+    bottom: 0;
+    margin-left: -($service-circle-size / 2);
+  }
+
+  &:nth-child(6) {
+    top: 50%;
+    left: 2%;
+    transform: translate3d(0, -50%, 0);
+  }
 }
 
 .service {
-  width: 100%;
-  background-color: #fff;
-  padding: 30px 20px 20px;
-  box-shadow: rgba(#000, 0.4) 0 3px 10px;
+  width: $service-circle-size;
+  height: $service-circle-size;
+  background-color: #201F44;
+  cursor: pointer;
+  border: 1px solid $color-ocean;
+  position: relative;
+  border-radius: 50%;
+  transition: transform 0.23s ease;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.icon {
+  width: 60%;
+  @include absolute-centring;
+
+  path {
+    fill: $color-ocean;
+  }
 }
 
 .title {
@@ -44,14 +158,13 @@
 @include media-tablet-landscape-and-higher {
 
   .serviceContainer {
-    width: 33.33%;
-    padding: 0 15px;
+
   }
 }
 
 @include media-tablet-portrait-and-lower {
 
   .serviceContainer {
-    width: 100%;
+
   }
 }

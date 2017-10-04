@@ -74,22 +74,22 @@
 
 .bounty {
   width: 3%;
-  background-color: #008bdc;
+  background-color: #0368ff;
 }
 
 .team {
   width: 20%;
-  background-color: #04d1ff;
+  background-color: #0089ff;
 }
 
 .preSale {
   width: 4%;
-  background-color: #ff8100;
+  background-color: #00c4ff;
 }
 
 .sale {
   width: 73%;
-  background-color: #ffbc00;
+  background-color: #00e7ff;
 }
 
 .title {
@@ -107,4 +107,9 @@
     @include ff-opensans;
     color: #fff;
   }
+}
+
+
+.subscribe {
+  margin-top: 80px;
 }

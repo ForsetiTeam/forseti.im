@@ -6,6 +6,8 @@ import messages from './messages'
 import cssModules from 'react-css-modules'
 import styles from './TokenSale.scss'
 
+import Subscribe from 'components/Subscribe/Subscribe'
+
 import Section from '../Section/Section'
 import Title from '../Title/Title'
 import Capacity from './Capacity/Capacity'
@@ -32,6 +34,7 @@ const TokenSale = () => (
           </div>
         </div>
       </div>
+      <Subscribe styleName="subscribe" />
     </div>
   </Section>
 )
