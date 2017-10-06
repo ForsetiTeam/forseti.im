@@ -1,7 +1,7 @@
 import { defineMessages } from 'react-intl'
 
 export default defineMessages({
-  ids: 'pages.HomePage.TokenSale',
+  ids: 'pages.HomePage.HowItWorks',
 
-  title: 'Token sale',
+  title: 'How Forseti ecosystem works',
 })

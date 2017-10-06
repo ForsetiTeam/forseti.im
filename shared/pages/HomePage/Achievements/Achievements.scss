@@ -1,11 +1,45 @@
-.section {
-  background-color: #e4e9ee;
-}
-
 .achievements {
-  display: block;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -30px;
 }
 
 .achievement {
-  display: block;
+  width: 50%;
+  padding: 0 20px;
+  margin-top: 50px;
+}
+
+.image {
+  height: 320px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 2px solid #fff;
+  box-shadow: rgba(#000, 0.23) 0 3px 10px;
+}
+
+.title {
+  margin-top: 15px;
+  font-size: 20px;
+  color: $color-ocean;
+
+  span {
+    @include ff-opensans-light;
+    color: #fff;
+
+    &:before {
+      content: '/';
+      padding: 0 14px 0 10px;
+      @include ff-opensans-light;
+      color: #98a2da;
+    }
+  }
+}
+
+.date {
+  margin-top: 5px;
+  @include ff-opensans-light;
+  font-size: 14px;
+  color: #98a2da;
 }

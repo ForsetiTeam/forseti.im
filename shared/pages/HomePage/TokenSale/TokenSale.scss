@@ -1,115 +1,39 @@
 .content {
-  max-width: 840px;
+  padding-top: 40px;
+  max-width: 700px;
   margin: 0 auto;
 }
 
 
-.chartContainer {
-  margin-top: 80px;
-  padding: 60px 0;
-}
-
 .chart {
-  height: 60px;
-  font-size: 0;
-  box-shadow: rgba(#000, 0.4) 0 3px 10px;
-
-  > div {
-    height: 100%;
-    position: relative;
-    @include inline-block;
-
-    &:before {
-      content: '';
-      display: block;
-      width: 2px;
-      height: 30px;
-      background-color: rgba(#736fb7, 0.3);
-      position: absolute;
-      left: 50%;
-      margin-left: -1px;
-    }
-    
-    &:after {
-      content: '';
-      display: block;
-      width: 1px;
-      height: 100%;
-      background-color: #000;
-      position: absolute;
-      top: 0;
-      left: 0;
-    }
-
-    &:first-child {
-
-      &:after {
-        display: none;
-      }
-    }
-
-    &:nth-child(odd) {
-
-      &:before {
-        top: 70px;
-      }
-
-      .title {
-        top: 106px;
-      }
-    }
-
-    &:nth-child(even) {
-
-      &:before {
-        bottom: 70px;
-      }
-
-      .title {
-        bottom: 106px;
-      }
-    }
-  }
+  display: block;
 }
 
-.bounty {
-  width: 3%;
-  background-color: #0368ff;
-}
-
-.team {
-  width: 20%;
-  background-color: #0089ff;
-}
-
-.preSale {
-  width: 4%;
-  background-color: #00c4ff;
-}
-
-.sale {
-  width: 73%;
-  background-color: #00e7ff;
-}
-
-.title {
-  position: absolute;
-  left: 50%;
-  text-transform: uppercase;
-  white-space: nowrap;
-  @include ff-opensans-bold;
-  font-size: 16px;
-  color: $color-ocean;
-  transform: translate3d(-50%, 0, 0);
-
-  span {
-    margin-left: 5px;
-    @include ff-opensans;
-    color: #fff;
-  }
+.capacity {
+  display: block;
 }
 
 
 .subscribe {
   margin-top: 80px;
+}
+
+
+@include media-except-mobile {
+
+  .content {
+    display: flex;
+    justify-content: center;
+  }
+
+  .chart {
+    min-width: 0;
+    flex: 1 1 auto;
+    margin-right: 80px;
+  }
+}
+
+@include media-mobile {
+
+
 }

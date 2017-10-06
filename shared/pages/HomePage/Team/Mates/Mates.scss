@@ -18,8 +18,10 @@
   max-width: 300px;
   margin: 0 auto;
   position: relative;
+  overflow: hidden;
   box-shadow: rgba(#000, 0.23) 0 3px 10px;
   @include no-user-select;
+  border-radius: 2px;
 }
 
 .avatar {

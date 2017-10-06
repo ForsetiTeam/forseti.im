@@ -48,20 +48,17 @@
     "message": "Подпишитесь и узнайте первыми о старте ICO"
   },
   {
+    "id": "pages.HomePage.Achievements.title",
+    "defaultMessage": "Forseti <span>Achievements</span>",
+    "message": "Forseti <span>Достижения</span>"
+  },
+  {
     "id": "pages.HomePage.HomeHero.title",
     "message": "Децентрализованная экономика нуждается<br />в децентрализованных сервисах"
   },
   {
     "id": "pages.HomePage.HomeHero.subTitle",
     "message": "&laquo; Мы предоставляем <span>нереально крутые сервисы</span> для ваших проектов &raquo;"
-  },
-  {
-    "id": "pages.HomePage.HomeHero.whitePaper",
-    "message": "White paper"
-  },
-  {
-    "id": "pages.HomePage.HomeHero.checkoutCode",
-    "message": "Посмотреть код"
   },
   {
     "id": "pages.HomePage.HomeHero.Nav.whitePaper",
@@ -85,6 +82,36 @@
     "message": "Сервисы Forseti"
   },
   {
+    "id": "pages.HomePage.Services.escrow",
+    "defaultMessage": "Escrow",
+    "message": "Escrow"
+  },
+  {
+    "id": "pages.HomePage.Services.arbitrage",
+    "defaultMessage": "Arbitrage",
+    "message": "Арбитраж"
+  },
+  {
+    "id": "pages.HomePage.Services.reputation",
+    "defaultMessage": "Reputation",
+    "message": "Репутация"
+  },
+  {
+    "id": "pages.HomePage.Services.identity",
+    "defaultMessage": "Identity",
+    "message": "Идентификация"
+  },
+  {
+    "id": "pages.HomePage.Services.auction",
+    "defaultMessage": "Auction",
+    "message": "Аукцион"
+  },
+  {
+    "id": "pages.HomePage.Services.referral",
+    "defaultMessage": "Referral",
+    "message": "Рефералка"
+  },
+  {
     "id": "pages.HomePage.StayTuned.Subscribe.inputPlaceholder",
     "message": "Ваш Email"
   },
@@ -98,37 +125,30 @@
   },
   {
     "id": "pages.HomePage.TokenSale.Capacity.minimal",
-    "defaultMessage": "Soft cap",
     "message": "Soft cap"
   },
   {
     "id": "pages.HomePage.TokenSale.Capacity.maximal",
-    "defaultMessage": "Hard cap",
     "message": "Hard cap"
   },
   {
     "id": "pages.HomePage.TokenSale.title",
-    "defaultMessage": "Token sale",
     "message": "Распродажа токенов"
   },
   {
     "id": "pages.HomePage.TokenSale.bounty",
-    "defaultMessage": "3% <span>Bounty</span>",
     "message": "3% <span>Баунти</span>"
   },
   {
     "id": "pages.HomePage.TokenSale.team",
-    "defaultMessage": "20% <span>Team</span>",
     "message": "20% <span>Команда</span>"
   },
   {
     "id": "pages.HomePage.TokenSale.preSale",
-    "defaultMessage": "4% <span>Pre Sale</span>",
     "message": "4% <span>Pre Sale</span>"
   },
   {
     "id": "pages.HomePage.TokenSale.sale",
-    "defaultMessage": "73% <span>Sale</span>",
     "message": "73% <span>Sale</span>"
   }
 ]

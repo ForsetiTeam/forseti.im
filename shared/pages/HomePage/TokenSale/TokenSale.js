@@ -10,6 +10,7 @@ import Subscribe from 'components/Subscribe/Subscribe'
 
 import Section from '../Section/Section'
 import Title from '../Title/Title'
+import Chart from './Chart/Chart'
 import Capacity from './Capacity/Capacity'
 
 
@@ -17,25 +18,14 @@ const TokenSale = () => (
   <Section>
     <Title {...messages.title} />
     <div styleName="content">
-      <Capacity />
-      <div styleName="chartContainer">
-        <div styleName="chart">
-          <div styleName="bounty">
-            <FormattedHTMLMessage styleName="title" tag="div" {...messages.bounty} />
-          </div>
-          <div styleName="team">
-            <FormattedHTMLMessage styleName="title" tag="div" {...messages.team} />
-          </div>
-          <div styleName="preSale">
-            <FormattedHTMLMessage styleName="title" tag="div" {...messages.preSale} />
-          </div>
-          <div styleName="sale">
-            <FormattedHTMLMessage styleName="title" tag="div" {...messages.sale} />
-          </div>
-        </div>
+      <div styleName="chart">
+        <Chart />
       </div>
-      <Subscribe styleName="subscribe" />
+      <div styleName="capacity">
+        <Capacity />
+      </div>
     </div>
+    <Subscribe styleName="subscribe" />
   </Section>
 )
 

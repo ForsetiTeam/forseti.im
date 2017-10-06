@@ -1,0 +1,123 @@
+.chartContainer {
+  max-width: 300px;
+  @include square-block;
+  position: relative;
+}
+
+.chart {
+  width: 100%;
+  height: 100%;
+  background-color: #ffe000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  box-shadow: rgba(#000, 0.4) 0 3px 10px;
+  border-radius: 50%;
+
+  &:before {
+    content: '';
+    display: block;
+    background-color: #201F45;
+    width: 60%;
+    height: 60%;
+    @include absolute-centring;
+    z-index: 40;
+    box-shadow: rgba(#000, 0.4) 0 3px 10px inset;
+    border-radius: 50%;
+  }
+}
+
+.section {
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 10;
+
+  &:before {
+    content: '';
+    display: block;
+    width: 2px;
+    height: 200px;
+    background-color: #201F45;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 50;
+  }
+}
+
+.piece {
+  width: 100%;
+  height: 100%;
+  border-right: 2px solid #201F45;
+  position: absolute;
+  top: 0;
+  left: -100%;
+  transform-origin: 100% 50%;
+}
+
+.bounty {
+  background-color: #ff8100;
+  transform: rotate(11deg);
+  z-index: 30;
+}
+
+.team {
+  background-color: #ff9901;
+  transform: rotate(83deg);
+  z-index: 20;
+}
+
+.preSale {
+  background-color: #ffbd04;
+  transform: rotate(97deg);
+  z-index: 10;
+}
+
+.titles {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 50;
+}
+
+.title {
+  position: absolute;
+  text-transform: uppercase;
+  white-space: nowrap;
+  @include ff-opensans-bold;
+  font-size: 16px;
+  color: $color-ocean;
+
+  span {
+    margin-left: 5px;
+    @include ff-opensans;
+    color: #fff;
+  }
+
+  &:nth-child(1) {
+    top: -10%;
+    left: 50%;
+  }
+
+  &:nth-child(2) {
+    left: 90%;
+    top: 10%;
+  }
+
+  &:nth-child(3) {
+    left: 104%;
+    top: 47%;
+  }
+
+  &:nth-child(4) {
+    left: 4%;
+    top: 97%;
+  }
+}

@@ -60,23 +60,18 @@
     "message": ""
   },
   {
+    "id": "pages.HomePage.Achievements.title",
+    "defaultMessage": "Forseti <span>Achievements</span>",
+    "message": ""
+  },
+  {
     "id": "pages.HomePage.HomeHero.title",
     "defaultMessage": "Decentralized economy need decentralized services",
     "message": ""
   },
   {
     "id": "pages.HomePage.HomeHero.subTitle",
-    "defaultMessage": "&laquo; We provide <span>extremely amazing services</span> for your projects &raquo;",
-    "message": ""
-  },
-  {
-    "id": "pages.HomePage.HomeHero.whitePaper",
-    "defaultMessage": "White paper",
-    "message": ""
-  },
-  {
-    "id": "pages.HomePage.HomeHero.checkoutCode",
-    "defaultMessage": "Checkout our code",
+    "defaultMessage": "Forseti is decentralized <span>Reputation</span> as a Service",
     "message": ""
   },
   {
@@ -102,6 +97,36 @@
   {
     "id": "pages.HomePage.Services.title",
     "defaultMessage": "What are Forseti services?",
+    "message": ""
+  },
+  {
+    "id": "pages.HomePage.Services.escrow",
+    "defaultMessage": "Escrow",
+    "message": ""
+  },
+  {
+    "id": "pages.HomePage.Services.arbitrage",
+    "defaultMessage": "Arbitrage",
+    "message": ""
+  },
+  {
+    "id": "pages.HomePage.Services.reputation",
+    "defaultMessage": "Reputation",
+    "message": ""
+  },
+  {
+    "id": "pages.HomePage.Services.identity",
+    "defaultMessage": "Identity",
+    "message": ""
+  },
+  {
+    "id": "pages.HomePage.Services.auction",
+    "defaultMessage": "Auction",
+    "message": ""
+  },
+  {
+    "id": "pages.HomePage.Services.referral",
+    "defaultMessage": "Referral",
     "message": ""
   },
   {

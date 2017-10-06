@@ -9,5 +9,5 @@ export default defineMessages({
   reputation: 'Reputation',
   identity: 'Identity',
   auction: 'Auction',
-  referral: 'Referral Program',
+  referral: 'Referral',
 })

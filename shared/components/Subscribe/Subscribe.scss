@@ -9,6 +9,7 @@
   box-sizing: content-box;
   font-size: 16px;
   color: #fff;
+  border-radius: 4px;
 
   @include placeholder {
     color: #fff !important;
@@ -23,7 +24,7 @@
   @include inline-block;
   height: 46px;
   line-height: 46px;
-  border: 1px solid #00ff8a;
+  background-color: #00ff8a;
   padding: 0 20px;
   box-sizing: content-box;
   cursor: pointer;
@@ -32,12 +33,12 @@
   text-transform: uppercase;
   text-align: center;
   font-size: 16px;
-  color: #00ff8a;
+  color: $color-main;
+  border-radius: 2px;
 
   &:hover {
-    border-color: #62ffd1;
-    color: #62ffd1;
-    box-shadow: #62ffd1 0 0 2px;
+    background-color: darken(#00ff8a, 3%);
+    color: #000;
   }
 }
 
@@ -45,6 +46,7 @@
   margin-top: 15px;
   letter-spacing: 1.2px;
   text-align: center;
+  @include ff-opensans-light;
   font-size: 16px;
   color: #98a2da;
 }
