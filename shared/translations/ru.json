@@ -49,7 +49,6 @@
   },
   {
     "id": "pages.HomePage.Achievements.title",
-    "defaultMessage": "Forseti <span>Achievements</span>",
     "message": "Forseti <span>Достижения</span>"
   },
   {
@@ -58,7 +57,7 @@
   },
   {
     "id": "pages.HomePage.HomeHero.subTitle",
-    "message": "&laquo; Мы предоставляем <span>нереально крутые сервисы</span> для ваших проектов &raquo;"
+    "message": "Forseti это децентрализованная Репутация как сервис"
   },
   {
     "id": "pages.HomePage.HomeHero.Nav.whitePaper",
@@ -73,6 +72,10 @@
     "message": "Telegram"
   },
   {
+    "id": "pages.HomePage.HowItWorks.title",
+    "message": "Как устроен Forseti"
+  },
+  {
     "id": "pages.HomePage.Roadmap.title",
     "defaultMessage": "Roadmap",
     "message": ""
@@ -83,41 +86,27 @@
   },
   {
     "id": "pages.HomePage.Services.escrow",
-    "defaultMessage": "Escrow",
     "message": "Escrow"
   },
   {
     "id": "pages.HomePage.Services.arbitrage",
-    "defaultMessage": "Arbitrage",
     "message": "Арбитраж"
   },
   {
     "id": "pages.HomePage.Services.reputation",
-    "defaultMessage": "Reputation",
     "message": "Репутация"
   },
   {
     "id": "pages.HomePage.Services.identity",
-    "defaultMessage": "Identity",
     "message": "Идентификация"
   },
   {
     "id": "pages.HomePage.Services.auction",
-    "defaultMessage": "Auction",
     "message": "Аукцион"
   },
   {
     "id": "pages.HomePage.Services.referral",
-    "defaultMessage": "Referral",
     "message": "Рефералка"
-  },
-  {
-    "id": "pages.HomePage.StayTuned.Subscribe.inputPlaceholder",
-    "message": "Ваш Email"
-  },
-  {
-    "id": "pages.HomePage.StayTuned.Subscribe.buttonTitle",
-    "message": "Подписаться сейчас"
   },
   {
     "id": "pages.HomePage.Team.title",
@@ -132,23 +121,23 @@
     "message": "Hard cap"
   },
   {
-    "id": "pages.HomePage.TokenSale.title",
-    "message": "Распродажа токенов"
-  },
-  {
-    "id": "pages.HomePage.TokenSale.bounty",
+    "id": "pages.HomePage.TokenSale.Chart.bounty",
     "message": "3% <span>Баунти</span>"
   },
   {
-    "id": "pages.HomePage.TokenSale.team",
+    "id": "pages.HomePage.TokenSale.Chart.team",
     "message": "20% <span>Команда</span>"
   },
   {
-    "id": "pages.HomePage.TokenSale.preSale",
+    "id": "pages.HomePage.TokenSale.Chart.preSale",
     "message": "4% <span>Pre Sale</span>"
   },
   {
-    "id": "pages.HomePage.TokenSale.sale",
+    "id": "pages.HomePage.TokenSale.Chart.sale",
     "message": "73% <span>Sale</span>"
+  },
+  {
+    "id": "pages.HomePage.TokenSale.title",
+    "message": "Распродажа токенов"
   }
 ]

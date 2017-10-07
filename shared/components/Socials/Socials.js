@@ -60,8 +60,8 @@ const socialImages = {
   ),
 }
 
-const Socials = ({ colored, emptyWhite, emptyBlack, links }) => (
-  <div styleName="socials">
+const Socials = ({ className, colored, emptyWhite, emptyBlack, links }) => (
+  <div styleName="socials" className={className}>
     {
       Object.keys(links).map((socialName) => {
         const styleName = cx('social', socialName, {

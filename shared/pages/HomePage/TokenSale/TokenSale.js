@@ -1,6 +1,5 @@
 import React from 'react'
 
-import { FormattedHTMLMessage } from 'sb-react-intl'
 import messages from './messages'
 
 import cssModules from 'react-css-modules'
@@ -18,14 +17,10 @@ const TokenSale = () => (
   <Section>
     <Title {...messages.title} />
     <div styleName="content">
-      <div styleName="chart">
-        <Chart />
-      </div>
-      <div styleName="capacity">
-        <Capacity />
-      </div>
+      <Capacity />
+      <Chart styleName="chart" />
+      <Subscribe styleName="subscribe" />
     </div>
-    <Subscribe styleName="subscribe" />
   </Section>
 )
 

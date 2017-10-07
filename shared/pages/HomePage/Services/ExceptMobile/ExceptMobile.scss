@@ -158,9 +158,9 @@ $service-circle-size: 90px;
   .active & {
     background-color: $color-ocean;
     cursor: default;
-    
+
     &:hover {
-      
+
       .icon {
         transform: scale(1.06);
       }
@@ -199,19 +199,4 @@ $service-circle-size: 90px;
   color: #fff;
   transform: translate3d(-50%, 0, 0);
   border-radius: 4px;
-}
-
-
-@include media-tablet-landscape-and-higher {
-
-  .serviceContainer {
-
-  }
-}
-
-@include media-tablet-portrait-and-lower {
-
-  .serviceContainer {
-
-  }
 }

@@ -7,8 +7,8 @@ import cssModules from 'react-css-modules'
 import styles from './Capacity.scss'
 
 
-const Capacity = () => (
-  <div styleName="caps">
+const Capacity = ({ className }) => (
+  <div styleName="caps" className={className}>
     <div styleName="cap minimal">
       <div styleName="arrow" />
       <div styleName="amount">$3,000,000</div>

@@ -1,5 +1,4 @@
 $roadmap-progress-size      : 2px;
-$roadmap-point-size         : 22px;
 $roadmap-color              : #fff;
 
 
@@ -153,9 +152,6 @@ $roadmap-color              : #fff;
 }
 
 .point {
-  width: $roadmap-point-size;
-  height: $roadmap-point-size;
-  margin-top: ($roadmap-point-size / -2 + 1px);
   position: absolute;
   z-index: 70;
   cursor: default;
@@ -226,7 +222,6 @@ $roadmap-color              : #fff;
 
 .title {
   margin-top: 10px;
-  font-size: 22px;
   @include ff-opensans-bold;
   color: #fff;
 
@@ -237,13 +232,13 @@ $roadmap-color              : #fff;
 
 .details {
   margin-top: 10px;
-  line-height: 26px;
-  font-size: 15px;
   color: #98a2da;
 }
 
 
 @include media-except-mobile {
+
+  $roadmap-point-size: 22px;
 
   .step {
 
@@ -254,8 +249,20 @@ $roadmap-color              : #fff;
   }
 
   .point {
+    width: $roadmap-point-size;
+    height: $roadmap-point-size;
+    margin-top: ($roadmap-point-size / -2 + 1px);
     margin-left: ($roadmap-point-size / -2);
     left: 50%;
+  }
+
+  .title {
+    font-size: 22px;
+  }
+
+  .details {
+    line-height: 26px;
+    font-size: 15px;
   }
 
   .infoContainer {
@@ -285,6 +292,8 @@ $roadmap-color              : #fff;
 
 @include media-mobile {
 
+  $roadmap-point-size: 16px;
+
   .boxes {
     display: none;
   }
@@ -292,16 +301,29 @@ $roadmap-color              : #fff;
   .step {
 
     &:after {
-      left: (($roadmap-point-size - $roadmap-progress-size) / 2) + 7px;
+      left: (($roadmap-point-size - $roadmap-progress-size) / 2) + 11px;
     }
   }
 
   .point {
-    left: 7px;
+    width: $roadmap-point-size;
+    height: $roadmap-point-size;
+    margin-top: ($roadmap-point-size / -2 - 3px);
+    margin-left: ($roadmap-point-size / -2);
+    left: 19px;
+  }
+
+  .title {
+    font-size: 18px;
+  }
+
+  .details {
+    line-height: 22px;
+    font-size: 14px;
   }
 
   .infoContainer {
-    padding-left: 60px;
+    padding-left: 45px;
     padding-bottom: 90px;
 
     .step:last-child & {

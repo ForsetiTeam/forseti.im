@@ -1,14 +1,15 @@
-.container {
+.socials {
+  margin-top: 50px;
   text-align: center;
 }
 
 
 @include media-except-mobile {
 
-  .container {
+  .socials {
 
     [role="social"] {
-      width: 50px;
+      width: 40px;
       margin-left: 20px;
     }
   }
@@ -16,7 +17,7 @@
 
 @include media-mobile {
 
-  .container {
+  .socials {
 
     [role="social"] {
       width: 32px;

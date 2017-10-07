@@ -35,12 +35,8 @@ const HowItWorks = () => (
   <Section>
     <Title {...messages.title} />
     <div styleName="content">
-      <div styleName="info">
-        <div styleName="desc" dangerouslySetInnerHTML={{ __html: desc }} />
-      </div>
-      <div styleName="scheme">
-        <img styleName="schemeImage" src={schemeImage} />
-      </div>
+      <img styleName="schemeImage" src={schemeImage} />
+      <div styleName="desc" dangerouslySetInnerHTML={{ __html: desc }} />
     </div>
   </Section>
 )

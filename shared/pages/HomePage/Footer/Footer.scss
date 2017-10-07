@@ -1,4 +1,18 @@
 .footer {
-  padding: 100px 0;
   text-align: center;
+}
+
+
+@include media-except-mobile {
+
+  .footer {
+    padding: 100px 0 60px;
+  }
+}
+
+@include media-mobile {
+
+  .footer {
+    padding: 30px 10px 50px;
+  }
 }

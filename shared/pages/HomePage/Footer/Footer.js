@@ -5,10 +5,13 @@ import styles from './Footer.scss'
 
 import Subscribe from 'components/Subscribe/Subscribe'
 
+import Follow from './Follow/Follow'
+
 
 const Footer = () => (
   <footer styleName="footer">
     <Subscribe />
+    <Follow />
   </footer>
 )
 

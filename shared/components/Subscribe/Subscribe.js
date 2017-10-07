@@ -1,5 +1,4 @@
 import React from 'react'
-import { Flex, Box } from 'reflexbox'
 import request from 'sb-request'
 
 import { FormattedMessage } from 'sb-react-intl'
@@ -44,14 +43,14 @@ export default class Subscribe extends React.Component {
 
     return (
       <div className={className}>
-        <Flex justify="center">
-          <Box>
+        <div styleName="row">
+          <div styleName="col">
             <input styleName="input" type="email" placeholder="Email" value={email} onChange={this.handleChange} />
-          </Box>
-          <Box>
+          </div>
+          <div styleName="col">
             <FormattedMessage styleName="button" tag="div" {...messages.subscribe} onClick={this.submit} />
-          </Box>
-        </Flex>
+          </div>
+        </div>
         <FormattedMessage styleName="desc" tag="div" {...messages.desc} />
       </div>
     )

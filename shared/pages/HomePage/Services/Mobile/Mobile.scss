@@ -1,0 +1,38 @@
+.content {
+  background-color: #fff;
+  border-radius: 2px;
+  box-shadow: rgba(#000, 0.4) 0 3px 10px;
+}
+
+.section {
+  border-top: 1px solid #d3d3d8;
+
+  &:first-child {
+    border-top: 0;
+  }
+}
+
+.title {
+  padding: 15px;
+  position: relative;
+  font-size: 16px;
+}
+
+.arrow {
+  @include arrow('down', 10px, 2px, #c8c8d6);
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  margin-top: -6px;
+
+  .opened & {
+    transform: rotate(-45deg);
+  }
+}
+
+.desc {
+  padding: 0 15px 15px;
+  line-height: 24px;
+  font-size: 13px;
+  color: #6d6c84;
+}

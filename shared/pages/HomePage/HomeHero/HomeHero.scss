@@ -351,8 +351,12 @@
 
 @include media-mobile {
 
+  .hero {
+    padding: 0 10px;
+  }
+
   .content {
-    padding: 30px 20px 40px;
+    padding: 30px 0 40px;
     position: relative;
   }
 

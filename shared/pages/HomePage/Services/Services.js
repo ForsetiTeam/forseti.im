@@ -1,17 +1,16 @@
 import React from 'react'
-import cx from 'classnames'
+import Media from 'sb-media'
 
 import { FormattedMessage } from 'sb-react-intl'
 import messages from './messages'
 
-import cssModules from 'react-css-modules'
-import styles from './Services.scss'
-
 import WidthContainer from 'components/WidthContainer/WidthContainer'
-import ServiceIcon from 'components/ServiceIcon/ServiceIcon'
 
 import Section from '../Section/Section'
 import Title from '../Title/Title'
+
+import ExceptMobile from './ExceptMobile/ExceptMobile'
+import Mobile from './Mobile/Mobile'
 
 
 const services = 'escrow arbitrage reputation identity auction referral'.split(' ')
@@ -70,70 +69,20 @@ const texts = {
   },
 }
 
-@cssModules(styles, { allowMultiple: true })
-export default class Services extends React.Component {
+const Services = () => (
+  <Section>
+    <WidthContainer>
+      <Title {...messages.title} />
+      <Media mobile>
+        {
+          (isMatched) => React.createElement(isMatched ? Mobile : ExceptMobile, {
+            services,
+            texts,
+          })
+        }
+      </Media>
+    </WidthContainer>
+  </Section>
+)
 
-  state = {
-    activeName: 'escrow',
-  }
-
-  changeActiveName = (name) => {
-    this.setState({
-      activeName: name,
-    })
-  }
-
-  render() {
-    const { activeName } = this.state
-
-    return (
-      <Section>
-        <WidthContainer>
-          <Title {...messages.title} />
-          <div styleName="content">
-            <div styleName="info">
-              <div styleName="title">{texts[activeName].title}</div>
-              <div styleName="desc" dangerouslySetInnerHTML={{ __html: texts[activeName].desc }} />
-            </div>
-            <div styleName="scheme">
-              <div styleName="servicesContainer">
-                <div styleName="forseti">F</div>
-                <div styleName="lines">
-                  <div styleName="line" />
-                  <div styleName="line" />
-                  <div styleName="line" />
-                  <div styleName="line" />
-                  <div styleName="line" />
-                  <div styleName="line" />
-                </div>
-                <div styleName="services">
-                  {
-                    services.map((name, index) => {
-                      const styleName = cx('serviceContainer', {
-                        'active': activeName === name,
-                      })
-
-                      return (
-                        <div key={index} styleName={styleName}>
-                          <div styleName="service" onClick={() => this.changeActiveName(name)}>
-                            {
-                              React.createElement(ServiceIcon, {
-                                styleName: 'icon',
-                                [name]: true,
-                              })
-                            }
-                          </div>
-                          <FormattedMessage styleName="serviceTitle" tag="div" {...messages[name]} />
-                        </div>
-                      )
-                    })
-                  }
-                </div>
-              </div>
-            </div>
-          </div>
-        </WidthContainer>
-      </Section>
-    )
-  }
-}
+export default Services

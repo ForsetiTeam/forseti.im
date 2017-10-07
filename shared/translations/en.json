@@ -90,6 +90,11 @@
     "message": ""
   },
   {
+    "id": "pages.HomePage.HowItWorks.title",
+    "defaultMessage": "How Forseti ecosystem works",
+    "message": ""
+  },
+  {
     "id": "pages.HomePage.Roadmap.title",
     "defaultMessage": "Roadmap",
     "message": ""
@@ -130,16 +135,6 @@
     "message": ""
   },
   {
-    "id": "pages.HomePage.StayTuned.Subscribe.inputPlaceholder",
-    "defaultMessage": "Your email address",
-    "message": ""
-  },
-  {
-    "id": "pages.HomePage.StayTuned.Subscribe.buttonTitle",
-    "defaultMessage": "Subscribe now",
-    "message": ""
-  },
-  {
     "id": "pages.HomePage.Team.title",
     "defaultMessage": "Meet Forseti Team",
     "message": ""
@@ -155,28 +150,28 @@
     "message": ""
   },
   {
-    "id": "pages.HomePage.TokenSale.title",
-    "defaultMessage": "Token sale",
-    "message": ""
-  },
-  {
-    "id": "pages.HomePage.TokenSale.bounty",
+    "id": "pages.HomePage.TokenSale.Chart.bounty",
     "defaultMessage": "3% <span>Bounty</span>",
     "message": ""
   },
   {
-    "id": "pages.HomePage.TokenSale.team",
+    "id": "pages.HomePage.TokenSale.Chart.team",
     "defaultMessage": "20% <span>Team</span>",
     "message": ""
   },
   {
-    "id": "pages.HomePage.TokenSale.preSale",
+    "id": "pages.HomePage.TokenSale.Chart.preSale",
     "defaultMessage": "4% <span>Pre Sale</span>",
     "message": ""
   },
   {
-    "id": "pages.HomePage.TokenSale.sale",
+    "id": "pages.HomePage.TokenSale.Chart.sale",
     "defaultMessage": "73% <span>Sale</span>",
+    "message": ""
+  },
+  {
+    "id": "pages.HomePage.TokenSale.title",
+    "defaultMessage": "Token sale",
     "message": ""
   }
 ]
