@@ -31,7 +31,7 @@ const achievements = [
   },
   {
     image: icolabsImage,
-    title: 'ICOLabs Hackathon <span>1d place</span>',
+    title: 'ICOLabs Hackathon <span>1st place</span>',
     date: 1506038400000,
   },
   {

@@ -4,7 +4,7 @@ import cookie from 'react-cookie'
 
 export const initialState = Map({
   isLoaderVisible: false,
-  locale: cookie.load('locale') || 'ru',
+  locale: cookie.load('locale') || 'en',
   headerActiveDropMenuName: null,
 })
 

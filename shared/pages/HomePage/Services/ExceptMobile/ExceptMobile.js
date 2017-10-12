@@ -1,6 +1,8 @@
 import React from 'react'
 import cx from 'classnames'
 
+import { FormattedMessage } from 'sb-react-intl'
+
 import cssModules from 'react-css-modules'
 import styles from './ExceptMobile.scss'
 
@@ -27,7 +29,7 @@ export default class ExceptMobile extends React.Component {
     return (
       <div styleName="content">
         <div styleName="info">
-          <div styleName="title">{texts[activeName].title}</div>
+          <FormattedMessage styleName="title" tag="div" {...texts[activeName].title} />
           <div styleName="desc" dangerouslySetInnerHTML={{ __html: texts[activeName].desc }} />
         </div>
         <div styleName="scheme">
@@ -58,7 +60,7 @@ export default class ExceptMobile extends React.Component {
                           })
                         }
                       </div>
-                      <FormattedMessage styleName="serviceTitle" tag="div" {...messages[name]} />
+                      <FormattedMessage styleName="serviceTitle" tag="div" {...texts[name].title} />
                     </div>
                   )
                 })

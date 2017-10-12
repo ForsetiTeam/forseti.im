@@ -2,6 +2,8 @@ import React from 'react'
 import Collapse from 'react-collapse'
 import cx from 'classnames'
 
+import { FormattedMessage } from 'sb-react-intl'
+
 import cssModules from 'react-css-modules'
 import styles from './Mobile.scss'
 
@@ -39,7 +41,7 @@ export default class Mobile extends React.Component {
               <div key={name} styleName={styleName}>
                 <div styleName="title" onClick={() => this.changeActiveName(name)}>
                   <div styleName="arrow" />
-                  {title}
+                  <FormattedMessage {...title} />
                 </div>
                 <Collapse
                   isOpened={isOpened}
