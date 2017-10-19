@@ -1,5 +1,6 @@
 import React from 'react'
 import request from 'sb-request'
+import actions from 'redux/actions'
 
 import { FormattedMessage } from 'sb-react-intl'
 import messages from './messages'
@@ -12,6 +13,7 @@ import styles from './Subscribe.scss'
 export default class Subscribe extends React.Component {
 
   state = {
+    isSubscribed: false,
     email: '',
   }
 
@@ -25,6 +27,8 @@ export default class Subscribe extends React.Component {
     const { email } = this.state
 
     if (email) {
+      actions.ui.showRequestLoader()
+
       request.post('https://brainapi.ru/forseti/subscription', {
         body: {
           value: email,
@@ -32,13 +36,16 @@ export default class Subscribe extends React.Component {
         sameOrigin: false,
       })
         .then(() => {
-
+          actions.ui.hideRequestLoader()
+          this.setState({
+            isSubscribed: true,
+          })
         })
     }
   }
 
   render() {
-    const { email } = this.state
+    const { isSubscribed, email } = this.state
     const { className } = this.props
 
     return (
@@ -51,7 +58,13 @@ export default class Subscribe extends React.Component {
             <FormattedMessage styleName="button" tag="div" {...messages.subscribe} onClick={this.submit} />
           </div>
         </div>
-        <FormattedMessage styleName="desc" tag="div" {...messages.desc} />
+        {
+          isSubscribed ? (
+            <FormattedMessage styleName="desc subscribeSuccess" tag="div" {...messages.subscribeSuccess} />
+          ) : (
+            <FormattedMessage styleName="desc" tag="div" {...messages.desc} />
+          )
+        }
       </div>
     )
   }

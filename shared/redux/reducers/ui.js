@@ -3,13 +3,12 @@ import cookie from 'react-cookie'
 
 
 export const initialState = Map({
-  isLoaderVisible: false,
   locale: cookie.load('locale') || 'en',
-  headerActiveDropMenuName: null,
+  isRequestLoaderVisible: false,
 })
 
-export const setLoaderVisibility = (state, payload) =>
-  state.set('isLoaderVisible', payload)
+export const setRequestLoaderVisibility = (state, payload) =>
+  state.set('isRequestLoaderVisible', payload)
 
 export const setLocale = (state, payload) =>
   state.set('locale', payload)

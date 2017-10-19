@@ -48,6 +48,11 @@
     "message": "Подпишитесь и узнайте первыми о старте ICO"
   },
   {
+    "id": "components.Subscribe.subscribeSuccess",
+    "defaultMessage": "Thank you for subscribing!",
+    "message": "Спасибо за подписку!"
+  },
+  {
     "id": "pages.HomePage.Achievements.title",
     "message": "Forseti <span>Достижения</span>"
   },

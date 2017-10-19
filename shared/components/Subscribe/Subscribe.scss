@@ -1,7 +1,7 @@
 .input {
   width: 240px;
-  height: 46px;
-  line-height: 46px;
+  height: 44px;
+  line-height: 44px;
   padding: 0 20px;
   background: none;
   border: 1px solid #fff;
@@ -46,6 +46,10 @@
   text-align: center;
   @include ff-opensans-light;
   color: #98a2da;
+}
+
+.subscribeSuccess {
+  color: #92ff00;
 }
 
 

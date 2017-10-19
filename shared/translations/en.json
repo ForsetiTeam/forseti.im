@@ -56,7 +56,12 @@
   },
   {
     "id": "components.Subscribe.desc",
-    "defaultMessage": "Subscribe to be first when ICO launches",
+    "defaultMessage": "Subscribe to be first to know about presale",
+    "message": ""
+  },
+  {
+    "id": "components.Subscribe.subscribeSuccess",
+    "defaultMessage": "Thank you for subscribing!",
     "message": ""
   },
   {

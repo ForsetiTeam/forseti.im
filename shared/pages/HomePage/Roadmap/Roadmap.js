@@ -14,17 +14,17 @@ import Title from '../Title/Title'
 const steps = [
   {
     date: 1498867200000,
-    title: 'BlockchainHack 2017',
-    details: 'Hackathon 3-е место (команда BlockJudge), формирование команды',
+    title: 'Blockchain Hack 2017 Hackathon 3rd place (BlockJudge team), formation of team',
+    details: 'Blockchain Hack 2017 Hackathon 3rd place (BlockJudge team), formation of team',
   },
   {
     date: 1504224000000,
-    title: 'Разработка концепта и архитектуры Forseti',
+    title: 'Development of the concept and architecture of Forseti',
     details: 'Разработка концепта и архитектуры Forseti',
   },
   {
     date: 1509494400000,
-    title: 'Публикация прототипа модуля',
+    title: 'Publication of the prototype of the module of the safe transaction and mechanism of resolution of disputes (Arbitration)',
     details: 'Публикация прототипа модуля безопасной сделки и механизма решения споров (Арбитраж)',
   },
   {
@@ -34,7 +34,7 @@ const steps = [
   },
   {
     date: 1514764800000,
-    title: 'Публикация MVP',
+    title: 'MVP Publication. The module of reputation will additionally be presented in MVP, and modules of the safe transaction and the mechanism of resolution of disputes will be finished',
     details: 'В МВП будет дополнительно представлен модуль репутации и доработаны модули безопасной сделки и механизма решения споров',
   },
   {
@@ -44,17 +44,17 @@ const steps = [
   },
   {
     date: 1519862400000,
-    title: 'Выход на биржи',
+    title: 'Entry into the exchanges',
     details: 'Выход на биржи',
   },
   {
     date: 1525132800000,
-    title: 'Open beta+ bug bounty',
+    title: 'Open beta and bug bounty',
     details: 'Open beta+ bug bounty',
   },
   {
     date: 1530403200000,
-    title: 'Релиз в мейннет эфириума',
+    title: 'Release in the Etherium main net',
     details: 'Релиз в мейннет эфириума',
   },
 ]

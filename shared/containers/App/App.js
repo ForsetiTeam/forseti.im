@@ -4,7 +4,7 @@ import { reducers } from 'redux/core'
 import { connect } from 'redaction/immutable'
 import { links } from 'helpers'
 
-// import RequestLoader from 'components/RequestLoader/RequestLoader'
+import RequestLoader from 'components/RequestLoader/RequestLoader'
 // import ModalConductor from 'components/modal/ModalConductor/ModalConductor'
 
 import './App.scss'
@@ -40,6 +40,7 @@ export default class App extends React.Component {
     return (
       <div>
         {children}
+        <RequestLoader />
       </div>
     )
   }

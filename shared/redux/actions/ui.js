@@ -3,9 +3,8 @@ import { getState } from 'helpers'
 import cookie from 'react-cookie'
 
 
-const showLoader = () => reducers.ui.setLoaderVisibility(true)
-
-const hideLoader = () => reducers.ui.setLoaderVisibility(false)
+const showRequestLoader = () => reducers.ui.setRequestLoaderVisibility(true)
+const hideRequestLoader = () => reducers.ui.setRequestLoaderVisibility(false)
 
 const setLocale = (locale) => {
   cookie.save('locale', locale)
@@ -21,8 +20,8 @@ const toggleHeaderDropMenuVisibility = (dropMenuName) => {
 
 
 export default {
-  showLoader,
-  hideLoader,
+  showRequestLoader,
+  hideRequestLoader,
   setLocale,
   toggleHeaderDropMenuVisibility,
 }

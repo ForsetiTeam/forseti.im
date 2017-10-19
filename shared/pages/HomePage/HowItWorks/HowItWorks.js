@@ -13,22 +13,40 @@ import schemeImage from './images/scheme.png'
 
 
 const desc = `
-  На этапе краудсейла мы предлагаем токены <span>Fors</span>
+  During the crowdsale, <b>Fors</b> tokens will be emitted.<br />
+  Fors allows a discount of 60% for tokens of other projects in a pool during the auction.
   <br /><br />
-  Данные токены дают право на скидку в 60% при покупке криптовалюты из пула.
+  
+  <h3>How the pool will be formed?</h3>
+  <br />
+  The pool will be filled from 2 sources:
   <br /><br />
-  <h5>Пул криптовалют формируется из двух источников:</h5>
-  <ul>
-    <li>Плата за внедрение наших модулей</li>
-    <li>Комиссии с транзакций внутри наших модулей</li>
-  </ul>
+  • Payment for connection to our services
   <br /><br />
-  <h5>Выгода для инвестора:</h5>
-  <ul>
-    <li>Раз в месяц проходит аукцион, на котором владельцы токенов могут воспользоваться скидкой в 60% от биржевой стоимости и купить токены других проектов.</li>
-    <li>Чем больше проектов используют наши модули, тем большие средства аккумулируется в пуле и тем большее количество криптовалюты может купить инвестор на аукционе</li>
-    <li>Курс токена на бирже напрямую зависит от аккумулирующих средств в пуле. Forseti получает прибыль с продажи криптовалюты на аукционе, таким образом курс токена напрямую влияет на бизнес Forseti</li>
-  </ul>
+  We charge a fee for the integration of our modules into other projects. It can be fixed as well, and to make a percentage from tokens of the project to which there is integration. 10% from this sum is to be the commission of Forseti, 90% go into pool.
+  <br /><br />
+  • Payment for use of our services
+  <br /><br />
+  After the integration of our solution, we take the commissions from transactions in our modules. For example, in the module of arbitration we take the commission from the sum allocated for arbitration
+  
+  <h3>Auction</h3>
+  <br />
+  The auction passes once a month at which owners of tokens can use a discount in 60% of market value and buy the tokens from other projects.
+  <br /><br />
+ 
+  • The user can buy tokens only once during each auction.<br />
+  • During the auction functions of a transfer is inaccessible.<br />
+  • The user can buy only the part of the pool proportional to its share in Forseti's tokens. For example, in a bullet at an auction there are 100 Eth, the owner of tokens has 10 Fors, at the general issue in 100 Fors. He can buy 10 Eth at a discount of 60%, t.e of 10 Eth for 4 Eth.<br />
+  • All tokens which remained after the auction remain in a bullet.<br />
+  • Tokens which do not bargain at the exchange from the approved list of the exchanges do not get into the auction.<br />
+  <br /><br />
+  
+  <h3>Economy</h3>
+  <br />
+  Our project earns:
+  <br /><br />
+  • 10% of integration costs of our solution<br />
+  • The funds received from the token sale at an auction.
 `
 
 const HowItWorks = () => (

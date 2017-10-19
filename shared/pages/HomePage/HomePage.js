@@ -17,7 +17,7 @@ const HomePage = () => (
   <div styleName="wrapper">
     <HomeHero />
     <Services />
-    <Roadmap />
+    {/*<Roadmap />*/}
     <HowItWorks />
     <TokenSale />
     <Team />
