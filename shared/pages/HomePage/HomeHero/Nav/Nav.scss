@@ -25,7 +25,11 @@
 
 @include media-mobile {
 
-  .nav {
+  .navItem {
     display: none;
+
+    &:first-child {
+      @include inline-block;
+    }
   }
 }
