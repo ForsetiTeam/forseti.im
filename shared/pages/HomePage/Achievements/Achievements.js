@@ -14,7 +14,6 @@ import Title from '../Title/Title'
 
 import blockchainhackImage from './images/blockchainhack.jpg'
 import hypethonImage from './images/hypethon.jpg'
-import icolabsImage from './images/icolabs.jpg'
 import latokenImage from './images/latoken.jpg'
 
 
