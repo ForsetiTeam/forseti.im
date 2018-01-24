@@ -56,7 +56,7 @@
   },
   {
     "id": "components.Subscribe.desc",
-    "defaultMessage": "Subscribe to be first to know about presale",
+    "defaultMessage": "Subscribe to be first to know about the project launch date",
     "message": ""
   },
   {
@@ -81,7 +81,7 @@
   },
   {
     "id": "pages.HomePage.HomeHero.Nav.whitePaper",
-    "defaultMessage": "White Paper",
+    "defaultMessage": "White Paper <span>[coming soon]</span>",
     "message": ""
   },
   {

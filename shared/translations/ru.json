@@ -45,11 +45,10 @@
   },
   {
     "id": "components.Subscribe.desc",
-    "message": "Подпишитесь и узнайте первыми о старте ICO"
+    "message": "Подпишитесь и узнайте первыми о запуске проекта"
   },
   {
     "id": "components.Subscribe.subscribeSuccess",
-    "defaultMessage": "Thank you for subscribing!",
     "message": "Спасибо за подписку!"
   },
   {
@@ -66,7 +65,7 @@
   },
   {
     "id": "pages.HomePage.HomeHero.Nav.whitePaper",
-    "message": "White Paper"
+    "message": "White Paper <span>[coming soon]</span>"
   },
   {
     "id": "pages.HomePage.HomeHero.Nav.github",
