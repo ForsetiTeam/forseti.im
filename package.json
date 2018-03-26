@@ -24,7 +24,7 @@
     "autosize": "^3.0.20",
     "babel-polyfill": "^6.23.0",
     "classnames": "^2.2.5",
-    "extensible-runtime": "^4.0.1",
+    "extensible-runtime": "4.0.1",
     "intl": "^1.2.5",
     "lodash": "^4.17.2",
     "log-with-style": "^0.3.0",

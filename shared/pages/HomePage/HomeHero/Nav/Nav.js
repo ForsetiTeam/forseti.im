@@ -34,7 +34,9 @@ const Nav = ({ items }) => (
 
 export default connect({
   items: ({ ui: { locale } }) => [
-    { title: messages.whitePaper/* , redirect: `/forseti_wp_${locale}.pdf`*/ },
+    locale === 'en'
+      ? { title: messages.whitePaperComingSoon/* , redirect: `/forseti_wp_${locale}.pdf`*/ }
+      : { title: messages.whitePaper, redirect: `/forseti_wp_ru.pdf` },
     { title: messages.github, redirect: 'https://github.com/ForsetiTeam' },
     { title: messages.telegram, redirect: `https://t.me/${locale === 'en' ? 'forseti_chat_en' : 'forseti_chat_ru' }` },
   ],

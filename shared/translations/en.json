@@ -81,6 +81,11 @@
   },
   {
     "id": "pages.HomePage.HomeHero.Nav.whitePaper",
+    "defaultMessage": "White Paper",
+    "message": ""
+  },
+  {
+    "id": "pages.HomePage.HomeHero.Nav.whitePaperComingSoon",
     "defaultMessage": "White Paper <span>[coming soon]</span>",
     "message": ""
   },

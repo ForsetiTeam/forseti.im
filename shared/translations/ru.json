@@ -1,83 +1,108 @@
 [
   {
     "id": "components.buttons.CommonButton.back",
-    "message": "Назад"
+    "defaultMessage": "Back",
+    "message": ""
   },
   {
     "id": "components.buttons.CommonButton.accept",
-    "message": "Подтвердить"
+    "defaultMessage": "Accept",
+    "message": ""
   },
   {
     "id": "components.buttons.CommonButton.cancel",
-    "message": "Отмена"
+    "defaultMessage": "Cancel",
+    "message": ""
   },
   {
     "id": "components.buttons.CommonButton.confirm",
-    "message": "Подтвердить"
+    "defaultMessage": "Confirm",
+    "message": ""
   },
   {
     "id": "components.buttons.CommonButton.decline",
-    "message": "Отказать"
+    "defaultMessage": "Decline",
+    "message": ""
   },
   {
     "id": "components.buttons.CommonButton.login",
-    "message": "Войти"
+    "defaultMessage": "Login",
+    "message": ""
   },
   {
     "id": "components.buttons.CommonButton.finish",
-    "message": "ОК"
+    "defaultMessage": "Finish",
+    "message": ""
   },
   {
     "id": "components.buttons.CommonButton.reject",
-    "message": "Отказать"
+    "defaultMessage": "Reject",
+    "message": ""
   },
   {
     "id": "components.buttons.CommonButton.save",
-    "message": "Сохранить"
+    "defaultMessage": "Save",
+    "message": ""
   },
   {
     "id": "components.buttons.CommonButton.submit",
-    "message": "Подтвердить"
+    "defaultMessage": "Submit",
+    "message": ""
   },
   {
     "id": "components.Subscribe.subscribe",
-    "message": "Подписаться"
+    "defaultMessage": "Subscribe",
+    "message": ""
   },
   {
     "id": "components.Subscribe.desc",
-    "message": "Подпишитесь и узнайте первыми о запуске проекта"
+    "defaultMessage": "Subscribe to be first to know about the project launch date",
+    "message": ""
   },
   {
     "id": "components.Subscribe.subscribeSuccess",
-    "message": "Спасибо за подписку!"
+    "defaultMessage": "Thank you for subscribing!",
+    "message": ""
   },
   {
     "id": "pages.HomePage.Achievements.title",
-    "message": "Forseti <span>Достижения</span>"
+    "defaultMessage": "Forseti <span>Achievements</span>",
+    "message": ""
   },
   {
     "id": "pages.HomePage.HomeHero.title",
-    "message": "Децентрализованная экономика нуждается<br />в децентрализованных сервисах"
+    "defaultMessage": "Decentralized economy need decentralized services",
+    "message": ""
   },
   {
     "id": "pages.HomePage.HomeHero.subTitle",
-    "message": "Forseti это децентрализованная Репутация как сервис"
+    "defaultMessage": "Forseti is decentralized <span>Reputation</span> as a Service",
+    "message": ""
   },
   {
     "id": "pages.HomePage.HomeHero.Nav.whitePaper",
-    "message": "White Paper <span>[coming soon]</span>"
+    "defaultMessage": "White Paper",
+    "message": ""
+  },
+  {
+    "id": "pages.HomePage.HomeHero.Nav.whitePaperComingSoon",
+    "defaultMessage": "White Paper <span>[coming soon]</span>",
+    "message": ""
   },
   {
     "id": "pages.HomePage.HomeHero.Nav.github",
-    "message": "GitHub"
+    "defaultMessage": "GitHub",
+    "message": ""
   },
   {
     "id": "pages.HomePage.HomeHero.Nav.telegram",
-    "message": "Telegram"
+    "defaultMessage": "Telegram",
+    "message": ""
   },
   {
     "id": "pages.HomePage.HowItWorks.title",
-    "message": "Как устроен Forseti"
+    "defaultMessage": "How Forseti ecosystem works",
+    "message": ""
   },
   {
     "id": "pages.HomePage.Roadmap.title",
@@ -86,62 +111,77 @@
   },
   {
     "id": "pages.HomePage.Services.title",
-    "message": "Сервисы Forseti"
+    "defaultMessage": "What are Forseti services?",
+    "message": ""
   },
   {
     "id": "pages.HomePage.Services.escrow",
-    "message": "Escrow"
+    "defaultMessage": "Escrow",
+    "message": ""
   },
   {
     "id": "pages.HomePage.Services.arbitrage",
-    "message": "Арбитраж"
+    "defaultMessage": "Arbitrage",
+    "message": ""
   },
   {
     "id": "pages.HomePage.Services.reputation",
-    "message": "Репутация"
+    "defaultMessage": "Reputation",
+    "message": ""
   },
   {
     "id": "pages.HomePage.Services.identity",
-    "message": "Идентификация"
+    "defaultMessage": "Identity",
+    "message": ""
   },
   {
     "id": "pages.HomePage.Services.auction",
-    "message": "Аукцион"
+    "defaultMessage": "Auction",
+    "message": ""
   },
   {
     "id": "pages.HomePage.Services.referral",
-    "message": "Рефералка"
+    "defaultMessage": "Referral",
+    "message": ""
   },
   {
     "id": "pages.HomePage.Team.title",
-    "message": "Команда Forseti"
+    "defaultMessage": "Meet Forseti Team",
+    "message": ""
   },
   {
     "id": "pages.HomePage.TokenSale.Capacity.minimal",
-    "message": "Soft cap"
+    "defaultMessage": "Soft cap",
+    "message": ""
   },
   {
     "id": "pages.HomePage.TokenSale.Capacity.maximal",
-    "message": "Hard cap"
+    "defaultMessage": "Hard cap",
+    "message": ""
   },
   {
     "id": "pages.HomePage.TokenSale.Chart.bounty",
-    "message": "3% <span>Баунти</span>"
+    "defaultMessage": "3% <span>Bounty</span>",
+    "message": ""
   },
   {
     "id": "pages.HomePage.TokenSale.Chart.team",
-    "message": "20% <span>Команда</span>"
+    "defaultMessage": "20% <span>Team</span>",
+    "message": ""
   },
   {
     "id": "pages.HomePage.TokenSale.Chart.preSale",
-    "message": "4% <span>Pre Sale</span>"
+    "defaultMessage": "4% <span>Pre Sale</span>",
+    "message": ""
   },
   {
     "id": "pages.HomePage.TokenSale.Chart.sale",
-    "message": "73% <span>Sale</span>"
+    "defaultMessage": "73% <span>Sale</span>",
+    "message": ""
   },
   {
     "id": "pages.HomePage.TokenSale.title",
-    "message": "Распродажа токенов"
+    "defaultMessage": "Token sale",
+    "message": ""
   }
 ]
